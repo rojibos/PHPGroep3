@@ -1,0 +1,28 @@
+body{
+    font-family: Arial;
+    margin: 0;
+}
+#mainNav{
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    font-size: 2em;
+}
+#mainNav ul{
+    list-style: none;
+    display: inline;
+    height: fit-content;
+}
+#mainNav li{
+    float: left;
+}
+#mainNav li a{
+    display: block;
+    color: darkorange;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#mainNav li a:hover{
+    color: white;
+}
