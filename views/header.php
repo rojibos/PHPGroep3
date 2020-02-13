@@ -2,6 +2,7 @@
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';
+    //session_destroy();
 }
 ?>
 <html>
@@ -23,8 +24,8 @@ if (session_status() == PHP_SESSION_NONE) {
                 <div class="userMenu">
                     <button class="userMenuBtn"><img src="../../public/images/usermenu.png"></button>
                     <div class="userMenuContent">
-                        <a href="dance/dance.php">profile</a>
-                        <a href="dance/dance.php">logout</a>
+                        <a href="dance/dance.php">Profile</a>
+                        <a href="dance/dance.php">Logout</a>
                     </div>
                 </div>
             <?php
