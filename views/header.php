@@ -1,4 +1,6 @@
 <?php
+require_once '../../includes/ticketpageInc.php';
+require_once '../../logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';
