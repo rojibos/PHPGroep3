@@ -1,7 +1,6 @@
 <?php
 
 
-class User_DAL
+class User_DAL extends Database
 {
-
 }
