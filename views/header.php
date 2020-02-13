@@ -1,8 +1,8 @@
 <?php
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    $_SESSION['username'] = 'frank';
-    //session_destroy();
+//    $_SESSION['username'] = 'frank';
+    session_destroy();
 }
 ?>
 <html>
