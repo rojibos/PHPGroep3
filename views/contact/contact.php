@@ -4,9 +4,9 @@ require_once '../header.php';
 <main>
     <section class="standardFormWrapper">
         <h2>Contact form</h2>
-        <form action="../../includes/contactInc.com" class="standardForm">
+        <form action="../../includes/contactInc.php" class="standardForm" method="post">
             <div class="formMessage">
-                Message:<br><input type="text" name="massage" placeholder="Write your message here.">
+                Message:<br><input type="text" name="message" placeholder="Write your message here.">
             </div>
             <?php
                 if (!isset($_SESSION['username'])){

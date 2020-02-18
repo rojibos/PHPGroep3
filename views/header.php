@@ -1,7 +1,9 @@
 <?php
+require '../../includes/contactInc.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 //    $_SESSION['username'] = 'frank';
+//    $_SESSION['userMail'] = 's632145@632145.infhaarlem.nl';
     session_destroy();
 }
 ?>
