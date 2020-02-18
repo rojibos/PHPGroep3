@@ -125,12 +125,18 @@ body{
 }
 
 /*start standard form*/
-.standardForm{
+.standardFormWrapper{
     display: block;
     background-color: lightgray;
-    width: 50%;
+    width: 35%;
     border-radius: 10px;
     margin: auto;
+    padding: 10px;
+}
+.standardForm{
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .standardForm input[type=submit]{
     border: none;
@@ -142,4 +148,19 @@ body{
     cursor: pointer;
     padding: 10px;
     margin-top: 5px;
+    width: 100%;
+}
+.standardForm input[type=text]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 48%;
+}
+.formMessage {
+    float: right;
+}
+.formMessage input[type=text]{
+    height: 120px;
 }
