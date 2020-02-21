@@ -123,3 +123,46 @@ body{
 #cartBtn:hover{
     -webkit-filter: brightness(0) invert(1);
 }
+
+/*program page start*/
+
+.program{
+    width: 100%;
+    margin: auto;
+}
+
+.programTable{
+    display: block;
+    background-color: black;
+    color: black;
+    margin: auto;
+    width: fit-content;
+    padding: 0;
+    text-align: center;
+    border-spacing: 0;
+    font-size: 1.5em;
+}
+.programTable th{
+    background-color: #F0BE2B;
+    padding: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+}
+.programTable td{
+    padding: 10px;
+}
+.programTable tr:nth-child(even){
+    background-color: darkgrey;
+}
+.programTable tr:nth-child(odd){
+    background-color: lightgray;
+}
+.programTable a{
+    text-decoration: none;
+    color: black;
+}
+.programTable a:hover{
+    color: white;
+}
+
+/*program page end*/
