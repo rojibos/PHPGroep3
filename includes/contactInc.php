@@ -1,5 +1,6 @@
 <?php
-require '../logic/Mail.php';
+require '../logic/mail.php';
+
 $mail = new Mail();
 if (isset($_POST['sendMessage']))
 {
