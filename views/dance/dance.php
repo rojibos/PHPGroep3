@@ -5,7 +5,7 @@ $content = new Content();
 $data = $content->GetAllContent('jazz');
 ?>
 <main>
-    <?php echo $data->contents[1] ?>
+    <?php echo $data[2]->text; ?>
 </main>
 <?php
 require_once '../footer.php';

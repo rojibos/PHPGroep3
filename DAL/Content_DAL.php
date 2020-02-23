@@ -5,6 +5,7 @@ class Content_DAL extends Database
 {
     function GetAllContent($page)
     {
+        $data = [];
         $query = "SELECT text, type, content_id FROM content WHERE page LIKE :page";
         try {
             $stmt = $this->dbconnenct()->prepare($query);
