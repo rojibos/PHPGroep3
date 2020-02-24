@@ -1,5 +1,6 @@
-<?php
-require '../logic/mail.php';
+<?
+require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+require PATH.'logic/mail.php';
 
 $mail = new Mail();
 if (isset($_POST['sendMessage']))
@@ -25,7 +26,7 @@ if (isset($_POST['sendMessage']))
     }
     else{
         $mail->contactMessage($userMail, $user, $subject, $message);
-        exit();
+        return;
     }
 
 }

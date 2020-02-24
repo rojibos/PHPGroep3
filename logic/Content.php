@@ -1,6 +1,6 @@
 <?php
-require '../DAL/Content_DAL.php';
-require '../models/Content_Model.php';
+require PATH.'DAL/Content_DAL.php';
+require PATH.'models/Content_Model.php';
 
 
 class Content
