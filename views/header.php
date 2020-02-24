@@ -1,6 +1,7 @@
 <?php
-require_once '../../includes/ticketpageInc.php';
-require_once '../../logic/Ticket.php';
+define ('URL', 'http://hfa3.infhaarlem.nl/');
+require_once URL.'includes/ticketpageInc.php';
+require_once URL.'logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';

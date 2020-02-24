@@ -1,5 +1,5 @@
 <?php
-require_once '../header.php';
+require_once URL.'views/header.php';
 $ticket = new Ticket();
 ?>
 <main>
@@ -52,7 +52,7 @@ $ticket = new Ticket();
                                             <div class="block2"></div>
                                             <img class="ticketImg" src="../../public/images/tickets/<?php echo $row['img'] ?>">
                                             <form class="ticketForm"
-                                                  action="../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
+                                                  action="../../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
                                                   method="post">
                                                 <h3><?php echo $row['event'] ?></h3>
                                                 <h4>Price: €<?php echo $row['price'] ?></h4>
@@ -73,7 +73,7 @@ $ticket = new Ticket();
                                                 <div class="block"></div>
                                                 <img class="ticketImg" src="../../public/images/tickets/<?php echo $row['img'] ?>">
                                                 <form class="ticketForm"
-                                                      action="../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
+                                                      action="../../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
                                                       method="post">
                                                     <h3><?php echo $row['event'] ?></h3>
                                                     <h4>At: <?php echo $row['venue'] ?></h4>
