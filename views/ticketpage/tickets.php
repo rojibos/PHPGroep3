@@ -1,5 +1,5 @@
 <?php
-require_once URL.'views/header.php';
+require_once '../header.php';
 $ticket = new Ticket();
 ?>
 <main>
