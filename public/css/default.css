@@ -11,6 +11,7 @@ body{
     height: 46px;
     padding-bottom: 14px;
     font-size: 1.8em;
+    position: fixed;
 }
 
 /*links to different pages*/
@@ -133,6 +134,182 @@ body{
 #cartBtn:hover{
     -webkit-filter: brightness(0) invert(1);
 }
+
+/* Jazz eventpage */
+/*head*/
+.container{
+    padding-top: 1px;
+}
+#headerjazz{
+    width: 100%;
+    height: 30vh;
+    background-image: url("../images/JazzHeaderImage.jpg");
+    background-size: cover;
+}
+.titel{
+    font-size: 600%;
+    font-family: Moonlightning;
+    color: white;
+    text-align: center;
+}
+.ondertitel{
+    font-family: Roboto;
+    color: white;
+
+}
+/*middle*/
+article{
+    width: 100%;
+    height: 22vh;
+    text-align: left;
+    background-size: cover;
+}
+hr{
+    border-top: 3px solid #FFBE00;
+    margin-right: 70%;
+}
+.inleiding{
+    height: 15vh;
+    background-color: white;
+}
+#mainhall{
+    background-image: url("../images/EventJazzMainHal.png");
+}
+#secondhall{
+    background-image: url("../images/EventJazzSecondHall.png");
+}
+#thirdhall{
+    background-image: url("../images/EventJazzThirdHall.png");
+}
+#grotemarkt{
+    background-image: url("../images/EventJazzGrotenMarkt.png");
+}
+article p, article h2, article hr{
+    margin-left: 3%;
+    font-family: Roboto;
+}
+article p{
+    font-size: 90%;
+    width: 40%;
+}
+section p{
+    font-size: 100%;
+    font-family: Roboto;
+    width: 80%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navigationbuttons{
+    height: 15vh;
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+#forms{
+    display: flex;
+    margin: auto;
+}
+.gototicketpage{
+    background-color: #FFBE00;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 4%;
+    margin-top: 2%;
+    font-family: Moonlightning;
+    font-size: 150%;
+    font-weight: bold;
+}
+.gotoprogrammpage{
+    background-color: #FFBE00;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 4%;
+    margin-top: 2%;
+    font-family: Moonlightning;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* indexpage */
+
+#indextop{
+    background-image: url("../images/indexbackground.png");
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+#indexbottom{
+    text-align: center;
+}
+#column{
+    margin: auto;
+    text-align: center;
+}
+#moreinfo{
+    margin-top: 30px;
+}
+#indexintro{
+    height: 20vh;
+
+}
+#indexnav{
+    height: 15vh;
+}
+#indexselectionmenu{
+    background-color: #666666;
+    height: 45vh;
+}
+.indexintrosplit{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+#clickables{
+    margin-top: 30px;
+    position: relative;
+}
+h3{
+    color: white;
+    font-size: 350%;
+    font-family: Roboto;
+}
+.eventchose{
+    margin-right: 30px;
+}
+#jazztext, #dancetext, #historictext, #foodtext{
+    position: absolute;
+    color: white;
+    z-index: 2;
+    font-family: Roboto;
+    font-size: 150%;
+    bottom: 48%;
+}
+#jazztext{
+    left: 24%;
+}
+#dancetext{
+    left: 39%;
+}
+#historictext{
+    right: 40%;
+}
+#foodtext{
+    right: 26%;
+}
+#clickables img:hover{
+    transform: scale(1.1,1.1);
+}
+#moreinfo:hover{
+    transform: scale(1.1,1.1);
+}
+
+
 
 /*drop down event menu*/
 
