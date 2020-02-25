@@ -1,10 +1,8 @@
 <?php
 require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
-require '../../logic/Ticket.php';
+//require '../../logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    $_SESSION['username'] = 'frank';
-    //session_destroy();
 }
 ?>
 <html>
@@ -27,13 +25,13 @@ if (session_status() == PHP_SESSION_NONE) {
                     <button class="userMenuBtn"><img src="../../public/images/usermenu.png"></button>
                     <div class="userMenuContent">
                         <a href="dance/dance.php">Profile</a>
-                        <a href="dance/dance.php">Logout</a>
+                        <a href="../../includes/logoutInc.php">Logout</a>
                     </div>
                 </div>
             <?php
         }
         else{
-            echo '<a href="login/login.php" id="login">Sign in</a>';
+            echo '<a href="../../includes/loginInc.php" id="login">Sign in</a>';
         }
         ?>
 
