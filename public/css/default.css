@@ -1,7 +1,9 @@
 body{
-    font-family: Arial;
+    font-family: Roboto;
     margin: 0;
 }
+/*start header.php*/
+
 /*main navigation of the website*/
 #mainNav{
     background-color: black;
@@ -178,6 +180,268 @@ body{
 .eventMenu:hover .eventMenuBtn{
     color: white;
 }
+
+/*program page start*/
+
+.program{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.programTable{
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline;
+    padding: 0;
+    text-align: center;
+    border-spacing: 0;
+    font-size: 1.5em;
+}
+.programTable, th, td{
+    width: 400px;
+}
+.programTable th{
+    background-color: #F0BE2B;
+    padding: 15px;
+    font-family: Moonlightning;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+}
+.programTable td{
+    padding: 10px;
+}
+.programTable tr:nth-child(even){
+    background-color: darkgrey;
+}
+.programTable tr:nth-child(odd){
+    background-color: lightgray;
+}
+.programTable a{
+    text-decoration: none;
+    color: black;
+}
+.programTable a:hover{
+    color: white;
+}
+
+/*program page end*/
+
+/*close header.php*/
+
+/*start shared css*/
+
+.headerEvent
+{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.headerEvent img
+{
+    width: 100%;
+}
+.headerEvent h1
+{
+    font-family: Moonlightning;
+    font-size: 60pt;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*close shared css*/
+
+/*start ticketpage*/
+
+.navigationTickets
+{
+    position: relative;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+}
+.navigationTickets ul
+{
+    margin: 10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+.navigationTickets li
+{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navigationTickets li a
+{
+    position: relative;
+    display: block;
+}
+.navigationTickets p
+{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25pt;
+    font-family: Moonlightning;
+}
+
+/*start program nav*/
+
+.navigationProgram
+{
+    position: relative;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navigationProgram ul
+{
+    margin: 10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+.navigationProgram li
+{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navigationProgram li a
+{
+    position: relative;
+    display: block;
+    background-color: #F0BE2B;
+    font-family: Moonlightning;
+    font-size: 2em;
+    color: black;
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navigationProgram li a:hover
+{
+    color: white;
+}
+
+/*start tickets*/
+
+.ticketcontainer
+{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    padding: 0;
+
+}
+.block
+{
+    display: block;
+    background-color: black;
+    opacity: 0.6;
+    width: 180px;
+    height: 280px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.ticketcontainer2
+{
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 120px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0;
+
+}
+.block2
+{
+    display: block;
+    background-color: black;
+    opacity: 0.6;
+    width: 480px;
+    height: 100px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.ticketImg
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+}
+.ticketForm{
+    color: white;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ticketForm input[type=submit]
+{
+    border: none;
+    text-decoration: none;
+    background-color: #FFBE00;
+    font-family: Moonlightning;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+.ticketForm input[type=text]
+{
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.tickets{
+    margin: auto;
+}
+.day
+{
+    margin: 0 auto;
+    width: 20%;
+    font-family: Moonlightning;
+    font-size: 30pt;
+
+}
+.day h1
+{
+    text-align: center;
+    border-bottom: 3px solid #FFBE00;
+    padding-bottom: 5px;
+}
+
+/*close tickets*/
+
+/*close ticketpage*/
 
 /*start standard form*/
 .standardFormWrapper{
