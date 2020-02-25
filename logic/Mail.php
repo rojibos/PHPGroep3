@@ -12,7 +12,7 @@ class Mail
         mail($to, $subject, $message, $headers);
         return;
     }
-    function contactMessage($userMail, $user, $subject, $message)
+    function contactMail($userMail, $user, $subject, $message)
     {
         $to = MAIL_WEBSITE;
         $headers = "From: ".$user." <".$userMail.">\r\n";
