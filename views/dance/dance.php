@@ -2,10 +2,10 @@
 require_once '../header.php';
 require '../../logic/Content.php';
 $content = new Content();
-$data = $content->GetAllContent('jazz');
+$data = $content->GetAllContent('dance');
 ?>
 <main>
-    <?php echo $data[2]->text; ?>
+    <?php if(isset($data[2]->text)){echo $data[2]->text;} else{echo "test";} ?>
 </main>
 <?php
 require_once '../footer.php';
