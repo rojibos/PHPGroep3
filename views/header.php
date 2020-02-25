@@ -1,5 +1,6 @@
 <?php
 require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+require '../../logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';
