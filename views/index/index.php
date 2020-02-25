@@ -37,7 +37,7 @@ require '../header.php';
             <button class="gototicketpage" onclick="GoToPage('tickets')">TICKETS</button><button class="gotoprogrammpage" onclick="GoToPage('programm')">PROGRAMM</button>
         </section>
         <section id="indexselectionmenu">
-            <h3>Events haarlem Festival</h3>
+            <h3 class="h3">Events haarlem Festival</h3>
             <hr class="indexintrosplit">
 
             <div id="clickables">
