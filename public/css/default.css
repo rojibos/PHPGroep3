@@ -382,7 +382,7 @@ h3{
     border-spacing: 0;
     font-size: 1.5em;
 }
-.programTable, th, td{
+.programTable th, .programTable td{
     width: 400px;
 }
 .programTable th{
