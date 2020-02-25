@@ -16,7 +16,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <a href="http://instagram.com" class="socialLink"><img src="../../public/images/insta.png"></a>
         <a href="http://facebook.com" class="socialLink"><img src="../../public/images/facebook.png"></a>
         <a href="http://twitter.com" class="socialLink"><img src="../../public/images/twitter.png" alt=""></a>
-        <a href="index/index.php" id="logo">HAARLEM FESTIVAL</a>
+        <a href="../../views/index/index.php" id="logo">HAARLEM FESTIVAL</a>
 
         <?php
         if (isset($_SESSION['username'])){

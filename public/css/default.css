@@ -212,6 +212,7 @@ hr{
     background-color: white;
     width: 100%;
     display: flex;
+
 }
 #forms{
     display: flex;
@@ -227,6 +228,7 @@ hr{
     font-family: Moonlightning;
     font-size: 150%;
     font-weight: bold;
+    cursor: pointer;
 }
 .gotoprogrammpage{
     background-color: #FFBE00;
@@ -238,6 +240,7 @@ hr{
     font-family: Moonlightning;
     font-size: 150%;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* indexpage */

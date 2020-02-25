@@ -38,10 +38,10 @@ $data = $content->GetAllContent('jazz');
         <!--        Hier maak ik twee knoppen die naar de programpage en ticketpage gaan. Ik geef een variabele event mee in de url zodat op de ticketpagina direct naar het jazz event kan worden genavigeerd.-->
         <section class="navigationbuttons">
             <div id="forms">
-                <form action="../tickets/ticketpage.php?event=jazz">
+                <form action="../../views/tickets/ticketpage.php?event=jazz">
                     <button type="submit" class ="gototicketpage" id="gototicketpagejazz">TICKETS</button>
                 </form>
-                <form action="../program/program.php">
+                <form action="../../views/program/program.php">
                     <button type="submit" class = "gotoprogrammpage" id="gotoprogrammpagejazz">PROGRAMM</button>
                 </form>
             </div>
