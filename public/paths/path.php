@@ -1,2 +1,2 @@
 <?php
-define ('PATH', 'F:\xampp\htdocs\PHPGroep3/');
+define('PATH','F:\xampp\htdocs\PHPGroep3/');

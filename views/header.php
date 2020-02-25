@@ -1,7 +1,5 @@
 <?php
 require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
-require_once PATH.'includes/ticketpageInc.php';
-require_once PATH.'logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';
@@ -41,11 +39,22 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <a href="cart/cart.php"><img src="../../public/images/cart.png" id="cartBtn"></a>
         <ul>
-            <li><a href="dance/dance.php">Contact</a></li>
-            <li><a href="dance/dance.php">Tickets</a></li>
-            <li><a href="../program/program.php">Programme</a></li>
-            <li><a href="dance/dance.php">Events</a></li>
-            <li><a href="dance/dance.php">Home</a></li>
+            <?php
+            echo '<li><a href="../../views/contact/contact.php">Contact</a></li>';
+            echo '<li><a href="../../views/ticketpage/tickets.php">Tickets</a></li>';
+            echo '<li><a href="../../views/program/program.php">Programme</a></li>';
+            ?>
+            <div class="eventMenu">
+                <button class="eventMenuBtn">Events</button>
+                <div class="eventMenuContent">
+
+                    <a href="../../views/dance/dance.php">Dance</a>
+                    <a href="../../views/jazz/jazz.php">Jazz</a>
+                    <a href="../../views/food/food.php">Food</a>
+
+                </div>
+            </div>
+            <li><a href="<?php echo PATH.'views/contact/contact.php'?>">Home</a></li>
         </ul>
 
     </nav>
