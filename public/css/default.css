@@ -161,7 +161,7 @@ body{
 
 }
 /*middle*/
-article{
+.article{
     width: 100%;
     height: 22vh;
     text-align: left;
@@ -187,15 +187,19 @@ hr{
 #grotemarkt{
     background-image: url("../images/EventJazzGrotenMarkt.png");
 }
-article p, article h2, article hr{
-    margin-left: 3%;
+.article{
+
     font-family: Roboto;
 }
-article p{
+.p{
+    margin-left: 3%;
     font-size: 90%;
     width: 40%;
 }
-section p{
+.margin{
+    margin-left: 3%;
+}
+.intro{
     font-size: 100%;
     font-family: Roboto;
     width: 80%;
