@@ -1,4 +1,7 @@
 <?php
+require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+require_once PATH.'includes/ticketpageInc.php';
+require_once PATH.'logic/Ticket.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
     $_SESSION['username'] = 'frank';
