@@ -1,6 +1,6 @@
 <?php
 require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
-//require '../../logic/Ticket.php';
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -53,7 +53,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                 </div>
             </div>
-            <li><a href="../../views/contact/contact.php">Home</a></li>
+            <li><a href="../../views/index/index.php">Home</a></li>
         </ul>
 
     </nav>

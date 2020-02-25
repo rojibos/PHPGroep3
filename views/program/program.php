@@ -1,5 +1,6 @@
 <?php
 require_once '../header.php';
+require '../../logic/Ticket.php';
 $program = new Ticket();
 ?>
     <main>

@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require '../header.php';
 ?>
 <main>
     <!--    Hier roep ik variabele aan die in de logica laag uit de database worden gehaald, ik zet ze dan in de juiste elementen.-->
@@ -47,5 +47,5 @@
     </div>
 </main>
 <?php
-    require 'footer.php';
+    require '../footer.php';
 ?>

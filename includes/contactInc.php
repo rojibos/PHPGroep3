@@ -2,14 +2,14 @@
 require 'F:\xampp\htdocs\PHPGroep3/logic/Mail.php';
 if (isset($_POST['sendMessage']))
 {
-//    if (!isset($_SESSION['username'])){
-//        $userMail = $_SESSION['userMail'];
-//        $user = $_SESSION['username'];
-//    }
-//    else{
+    if (!isset($_SESSION['username'])){
+        $userMail = $_SESSION['userMail'];
+        $user = $_SESSION['username'];
+    }
+    else{
         $userMail = $_POST['email'];
         $user = $_POST['fullname'];
-//    }
+    }
 
     $subject = $_POST['subject'];
     $message = $_POST['message'];
