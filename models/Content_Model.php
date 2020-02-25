@@ -3,8 +3,7 @@
 
 class Content_Model
 {
-    public $title;
-    public $subtitle;
-    public $headers;
-    public $contents;
+    public $type;
+    public $text;
+    public $id;
 }
