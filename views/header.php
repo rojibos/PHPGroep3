@@ -43,7 +43,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <ul>
             <li><a href="dance/dance.php">Contact</a></li>
             <li><a href="dance/dance.php">Tickets</a></li>
-            <li><a href="dance/dance.php">Programme</a></li>
+            <li><a href="../program/program.php">Programme</a></li>
             <li><a href="dance/dance.php">Events</a></li>
             <li><a href="dance/dance.php">Home</a></li>
         </ul>

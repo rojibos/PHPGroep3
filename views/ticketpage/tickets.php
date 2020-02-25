@@ -12,7 +12,6 @@ $ticket = new Ticket();
             <li><a href="tickets.php?pagetype=dance"><p>Dance</p><img src="../../public/images/dancetickets.png"/></a></li>
             <li><a href="tickets.php?pagetype=jazz"><p>Jazz</p><img src="../../public/images/jazztickets.png"></a></li>
             <li><a href="tickets.php?pagetype=food"><p>Food</p><img src="../../public/images/foodtickets.png"></a></li>
-            <li><a href="tickets.php?pagetype=historic"><p>Historic</p><img src="../../public/images/historictickets.png"></a></li>
         </ul>
     </section>
     <section class="container">

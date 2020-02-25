@@ -131,22 +131,25 @@ body{
 .program{
     width: 100%;
     margin: auto;
+    text-align: center;
 }
 
 .programTable{
-    display: block;
-    background-color: black;
-    color: black;
-    margin: auto;
-    width: fit-content;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline;
     padding: 0;
     text-align: center;
     border-spacing: 0;
     font-size: 1.5em;
 }
+.programTable, th, td{
+    width: 400px;
+}
 .programTable th{
     background-color: #F0BE2B;
-    padding: 5px;
+    padding: 15px;
+    font-family: Moonlightning;
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
 }
@@ -233,6 +236,50 @@ body{
     transform: translate(-50%, -50%);
     font-size: 25pt;
     font-family: Moonlightning;
+}
+
+/*start program nav*/
+
+.navigationProgram
+{
+    position: relative;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.navigationProgram ul
+{
+    margin: 10px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+.navigationProgram li
+{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navigationProgram li a
+{
+    position: relative;
+    display: block;
+    background-color: #F0BE2B;
+    font-family: Moonlightning;
+    font-size: 2em;
+    color: black;
+    padding: 15px;
+    width: 150px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.navigationProgram li a:hover
+{
+    color: white;
 }
 
 /*start tickets*/
