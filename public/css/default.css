@@ -266,7 +266,8 @@ hr{
 }
 #clickables{
     margin-top: 30px;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 .h3{
     color: white;
@@ -275,14 +276,15 @@ hr{
 }
 .eventchose{
     margin-right: 30px;
+    display: flex;
 }
 #jazztext, #dancetext, #historictext, #foodtext{
     position: absolute;
     color: white;
-    z-index: 2;
+    /*z-index: 2;*/
     font-family: Roboto;
     font-size: 150%;
-    bottom: 48%;
+    /*bottom: 48%;*/
 }
 #jazztext{
     left: 24%;

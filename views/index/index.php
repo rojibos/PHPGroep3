@@ -41,14 +41,22 @@ require '../header.php';
             <hr class="indexintrosplit">
 
             <div id="clickables">
-                <img src="../../public/images/jazztickets.png" class="eventchose" id="jazzclick" onclick='GoToPage("jazz")'>
-                <div id="jazztext"><h4>JAZZ</h4></div>
-                <img src="../../public/images/dancetickets.png" class="eventchose" id="danceclick" onclick='GoToPage("dance")'>
-                <div id="dancetext"><h4>DANCE</h4></div>
-                <img src="../../public/images/foodtickets.png" class="eventchose" id="foodclick" onclick='GoToPage("food")'>
-                <div id="foodtext"><h4>FOOD</h4></div>
-                <img src="../../public/images/historictickets.png" class="eventchose" id="historicclick" onclick='GoToPage("historic")'>
-                <div id="historictext"><h4>HISTORIC</h4></div>
+                <div class="eventchose">
+                    <img src="../../public/images/jazztickets.png"  id="jazzclick" onclick='GoToPage("jazz")'>
+                    <div id="jazztext"><h4>JAZZ</h4></div>
+                </div>
+                <div class="eventchose">
+                    <img src="../../public/images/dancetickets.png"  id="danceclick" onclick='GoToPage("dance")'>
+                    <div id="dancetext"><h4>DANCE</h4></div>
+                </div>
+                <div class="eventchose">
+                    <img src="../../public/images/foodtickets.png"  id="foodclick" onclick='GoToPage("food")'>
+                    <div id="foodtext"><h4>FOOD</h4></div>
+                </div>
+                <div class="eventchose">
+                    <img src="../../public/images/historictickets.png"  id="historicclick" onclick='GoToPage("historic")'>
+                    <div id="historictext"><h4>HISTORIC</h4></div>
+                </div>
             </div>
             <script>
                 function GoToPage(event){
