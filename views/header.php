@@ -53,7 +53,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                 </div>
             </div>
-            <li><a href="<?php echo PATH.'views/contact/contact.php'?>">Home</a></li>
+            <li><a href="../../views/contact/contact.php">Home</a></li>
         </ul>
 
     </nav>
