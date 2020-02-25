@@ -53,17 +53,15 @@ require '../header.php';
             <script>
                 function GoToPage(event){
                     if(event == 'jazz'){
-                        window.location = "../jazz/jazz.php";
+                        window.location = "../../jazz/jazz.php";
                     }else if(event == 'dance'){
-                        window.location = "../dance/dance.php";
+                        window.location = "../../dance/dance.php";
                     }else if(event == 'food'){
-                        window.location = "../food/food.php";
-                    }else if(event == 'historic'){
-                        window.location = "index.php";
+                        window.location = "../../food/food.php";
                     }else if(event == 'tickets'){
-                        window.location = "../ticket/ticket.php";
+                        window.location = "../../ticket/ticket.php";
                     }else if(event == 'programm'){
-                        window.location = "../program/program.php";
+                        window.location = "../../program/program.php";
                     }
                 }
             </script>
