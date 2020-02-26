@@ -1,5 +1,5 @@
 <?php
-require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+require 'C:\xampp\htdocs\herkansing\public\paths/path.php';
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();

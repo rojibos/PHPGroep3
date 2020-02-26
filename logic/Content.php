@@ -1,7 +1,7 @@
 <?php
 
-require 'F:/xampp/htdocs/PHPGroep3/DAL/Content_DAL.php';
-require 'F:/xampp/htdocs/PHPGroep3/models/Content_Model.php';
+require 'C:\xampp\htdocs\herkansing/DAL/Content_DAL.php';
+require 'C:\xampp\htdocs\herkansing/models/Content_Model.php';
 
 
 class Content
