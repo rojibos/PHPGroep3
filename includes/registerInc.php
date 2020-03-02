@@ -46,7 +46,9 @@ if (isset($_POST['register']))
         else{
             $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
             $user->register($username, $email, $birthday, $hashedPassword, $currentDate);
-            $mail->conformationMail();
+            $conformationMessage = "You have succesfully registered an account for the Haarlem Festival website.<br>If you have any questions or remarks you can send a message trought the contactform. http://hfa3.infhaarlem.nl/views/contact/contact.php";
+            $conformationSubject = "Registration HaarlemFestival website";
+            $mail->conformationMail($email, $username, $conformationSubject, $conformationMessage);
             header("Location: ../view/succes.php?succes=registered");
             exit();
         }
