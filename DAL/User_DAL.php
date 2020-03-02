@@ -1,5 +1,5 @@
 <?php
-
+require 'Database.php';
 
 class User_DAL extends Database
 {
