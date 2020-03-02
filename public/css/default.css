@@ -159,6 +159,22 @@ body{
     border-radius: 3px;
     width: 48%;
 }
+.standardForm input[type=password]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 48%;
+}
+.standardForm input[type=date]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 18%;
+}
 .formMessage {
     float: right;
 }

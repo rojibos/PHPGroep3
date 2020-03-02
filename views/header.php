@@ -1,5 +1,5 @@
 <?php
-require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+//require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
@@ -41,7 +41,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <a href="cart/cart.php"><img src="../../public/images/cart.png" id="cartBtn"></a>
         <ul>
-            <li><a href="dance/dance.php">Contact</a></li>
+            <li><a href="contact/contact.php">Contact</a></li>
             <li><a href="dance/dance.php">Tickets</a></li>
             <li><a href="dance/dance.php">Programme</a></li>
             <li><a href="dance/dance.php">Events</a></li>
