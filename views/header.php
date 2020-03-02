@@ -1,8 +1,11 @@
 <?php
+require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-    $_SESSION['username'] = 'frank';
-    //session_destroy();
+//    $_SESSION['username'] = 'frank';
+//    $_SESSION['userMail'] = 's632145@632145.infhaarlem.nl';
+    session_destroy();
 }
 ?>
 <html>
