@@ -1,6 +1,8 @@
 <?php
-$username = 'frank';
-
 session_start();
-$_SESSION['username'] = $username;
+
+$user = $_POST['username'];
+$pass = $_POST['userpassword'];
+
+
 header("Location: ../views/index/index.php");
