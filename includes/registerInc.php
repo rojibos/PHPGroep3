@@ -1,7 +1,8 @@
 <?php
-require '../../logic/User.php';
-require '../../DAL/User_DAL.php';
-require '../../logic/Mail.php';
+require 'F:\xampp\htdocs\PHPGroep3/logic/User.php';
+require 'F:\xampp\htdocs\PHPGroep3/logic/Mail.php';
+$user = new User();
+$mail = new Mail();
 if (isset($_POST['register']))
 {
     $username = $_POST['username'];
@@ -13,22 +14,22 @@ if (isset($_POST['register']))
 
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat) || empty($birthday))
     {
-        header("Location: ../view/register.php?error=emptyfields");
+        header("Location: ../views/register/register.php?error=emptyfields");
         exit();
     }
     elseif (!filter_var($email, FILTER_VALIDATE_EMAIL))
     {
-        header("Location: ../view/register.php?error=invalidemail");
+        header("Location: ../views/register/register.php?error=invalidemail");
         exit();
     }
     elseif ($birthday > $currentDate)
     {
-        header("Location: ../view/register.php?error=invaliddate");
+        header("Location: ../views/register/register.php?error=invaliddate");
         exit();
     }
     elseif ($password != $passwordRepeat)
     {
-        header("Location: ../view/register.php?error=passwordnotequal");
+        header("Location: ../views/register/register.php?error=passwordnotequal");
         exit();
     }
     else
@@ -36,11 +37,11 @@ if (isset($_POST['register']))
         $user = new User();
         $mail = new Mail();
         if (!$user->usernameCheck($username)){
-            header("Location: ../view/register.php?error=usernameunavaileble");
+            header("Location: ../views/register/register.php?error=usernameunavaileble");
             exit();
         }
         elseif ($user->emailCheck($email)){
-            header("Location: ../view/register.php?error=emailunavaileble");
+            header("Location: ../views/register/register.php?error=emailunavaileble");
             exit();
         }
         else{
@@ -49,12 +50,8 @@ if (isset($_POST['register']))
             $conformationMessage = "You have succesfully registered an account for the Haarlem Festival website.<br>If you have any questions or remarks you can send a message trought the contactform. http://hfa3.infhaarlem.nl/views/contact/contact.php";
             $conformationSubject = "Registration HaarlemFestival website";
             $mail->conformationMail($email, $username, $conformationSubject, $conformationMessage);
-            header("Location: ../view/succes.php?succes=registered");
+            header("Location: ../views/succes/succes.php?succes=registered");
             exit();
         }
     }
-}
-else{
-    header("Location: ../view/register.php");
-    exit();
 }
