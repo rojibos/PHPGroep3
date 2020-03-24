@@ -5,6 +5,11 @@ class User
 {
     private $DAL;
 
+    function __construct()
+    {
+        $this->DAL = new User_DAL();
+    }
+
     public function login($username, $password)
     {
         $userDAL = new User_DAL();
@@ -35,10 +40,6 @@ class User
             return;
         }
     }
-    function __construct()
-    {
-        $this->DAL = new User_DAL();
-    }
 
     function register($username, $email, $birthday, $hashedPassword, $currentdate)
     {
@@ -65,5 +66,9 @@ class User
         else {
             return true;
         }
+    }
+    public function changePassword($email, $password)
+    {
+        $this->updatePassword($email, $password);
     }
 }

@@ -2,16 +2,16 @@
 require_once "../header.php";
 ?>
     <main>
-        <section id="Reset your password.">
-            <h1>Request password reset.</h1>
-            <form class="standardform" action="../includes/reset-password.inc.php" method="post">
+        <section class="standardFormWrapper">
+            <h2>Request password reset.</h2>
+            <form action="../../includes/reset-passwordInc.php" class="standardForm" method="post">
                 <input type="text" name="email" placeholder="E-mail"><br>
-                <input type="submit" name="resetPw">
+                <input type="submit" name="resetPw" value="Send">
             </form>
             <?php
             if (isset($_GET['error'])) {
-                $message = new Messages();
-                echo $message->errorMessages($_GET['error'], $_SESSION['language']);
+                $message = new Message();
+                echo $message->errorMessages($_GET['error']);
             }
             ?>
         </section>

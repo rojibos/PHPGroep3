@@ -1,7 +1,4 @@
 <?php
-require_once '../DAL/Database.php';
-require_once '../DAL/User_DAL.php';
-require_once '../DAL/PasswordReset_DAL.php';
 require_once '../logic/User.php';
 require_once '../logic/Password.php';
 require_once '../logic/Mail.php';
@@ -15,7 +12,7 @@ if (isset($_POST['resetPw']))
     $selectorBytes = mt_rand(10000000,99999999);
     $selector = bin2hex($selectorBytes);
     $token = mt_rand(100000000000000000000000000000000,99999999999999999999999999999999);
-    $urlPasswordReset = "www.632145.infhaarlem.nl/view/create-new-password.php?selector=" . $selector . "&validator=" .bin2hex($token);
+    $urlPasswordReset = "www.hfa3.infhaarlem.nl/views/create-new-password/create-new-password.php?selector=" . $selector . "&validator=" .bin2hex($token);
 
     $expirationDate = date("U") + 1800;
 
@@ -29,24 +26,24 @@ if (isset($_POST['resetPw']))
 
     if (empty($userEmail))
     {
-        header("Location: ../view/password-reset.php?error=emptyfields");
+        header("Location: ../views/password-reset/password-reset.php?error=emptyfields");
         exit();
     }
     else{
         if($users->emailCheck($userEmail))
         {
             $email->sendResetMail($userEmail, $urlPasswordReset);
-            header("Location: ../view/succes.php?succes=emailsend");
+            header("Location: ../views/succes/succes.php?succes=emailsend");
         }
         else
         {
-            header("Location: ../view/password-reset.php?error=noemail");
+            header("Location: ../views/password-reset/password-reset.php?error=noemail");
         }
 
         exit();
     }
 }
-else{
-    header("Location: ../view/login.php");
-    exit();
-}
+//else{
+//    header("Location: ../views/login/login.php");
+//    exit();
+//}

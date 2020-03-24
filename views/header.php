@@ -1,9 +1,5 @@
 <?php
-//if (session_status() == PHP_SESSION_NONE) {
-//    session_start();
-//    $_SESSION['username'] = 'frank';
-//    //session_destroy();
-//}
+require_once 'F:\xampp\htdocs\PHPGroep3/logic/Message.php';
 ?>
 <html>
 <head>

@@ -2,8 +2,8 @@
 require_once "../header.php";
 ?>
     <main>
-        <section>
-            <h1>Create new password.</h1>
+        <section class="standardFormWrapper">
+            <h2>Create new password.</h2>
             <?php
             $selector = $_GET["selector"];
             $validator = $_GET["validator"];
