@@ -1,9 +1,9 @@
 <?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-    $_SESSION['username'] = 'frank';
-    //session_destroy();
-}
+//if (session_status() == PHP_SESSION_NONE) {
+//    session_start();
+//    $_SESSION['username'] = 'frank';
+//    //session_destroy();
+//}
 ?>
 <html>
 <head>
@@ -31,14 +31,14 @@ if (session_status() == PHP_SESSION_NONE) {
             <?php
         }
         else{
-            echo '<a href="login/login.php" id="login">Sign in</a>';
+            echo '<a href="../login/login.php" id="login">Sign in</a>';
         }
         ?>
 
 
         <a href="cart/cart.php"><img src="../../public/images/cart.png" id="cartBtn"></a>
         <ul>
-            <li><a href="dance/dance.php">Contact</a></li>
+            <li><a href="../dance/dance.php">Contact</a></li>
             <li><a href="dance/dance.php">Tickets</a></li>
             <li><a href="dance/dance.php">Programme</a></li>
             <li><a href="dance/dance.php">Events</a></li>

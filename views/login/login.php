@@ -1,6 +1,6 @@
 <?php
 require_once '../header.php';
-require '../../includes/registerInc.php';
+require_once '../../includes/loginInc.php';
 ?>
     <main>
         <section class="standardFormWrapper">
