@@ -8,12 +8,12 @@ if (isset($_POST['login']))
 
     if (empty($username) || empty($password))
     {
-        header("Location: ../views/login/login.php?error=emptyfields");
+        header("Location: PHPGroep3/views/login/login.php?error=emptyfields");
         exit();
     }
     else{
         $users->login($username, $password);
-        header("Location: ../views/login/login.php?error=wrongcredentials");
+        header("Location: PHPGroep3/views/login/login.php?error=wrongcredentials");
         exit();
     }
 }
