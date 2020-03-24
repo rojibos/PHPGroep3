@@ -1,5 +1,5 @@
 <?php
-require_once 'F:\xampp\htdocs\PHPGroep3/DAL/Database.php';
+require_once 'Database.php';
 
 class User_DAL extends Database
 {

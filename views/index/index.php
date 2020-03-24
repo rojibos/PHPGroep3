@@ -1,5 +1,4 @@
 <?php
-//Include een header en de navigatiebalk.
 require '../header.php';
 ?>
 

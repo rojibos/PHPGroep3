@@ -1,6 +1,6 @@
 <?php
-require 'F:\xampp\htdocs\PHPGroep3/logic/User.php';
-require 'F:\xampp\htdocs\PHPGroep3/logic/Mail.php';
+require '../logic/User.php';
+require '../logic/Mail.php';
 $user = new User();
 $mail = new Mail();
 if (isset($_POST['register']))

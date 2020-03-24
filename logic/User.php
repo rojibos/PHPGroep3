@@ -1,5 +1,5 @@
 <?php
-require_once 'F:\xampp\htdocs\PHPGroep3/DAL/User_DAL.php';
+require_once '../DAL/User_DAL.php';
 
 class User
 {
@@ -61,14 +61,9 @@ class User
                 return;
             }
         }
-        else
-        {
-            return;
-        }
-        else {
-            return true;
-        }
     }
+
+
     public function changePassword($email, $password)
     {
         $this->updatePassword($email, $password);

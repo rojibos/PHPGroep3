@@ -1,5 +1,5 @@
 <?php
-require_once 'F:\xampp\htdocs\PHPGroep3/DAL/Password_DAL.php';
+require_once '../DAL/Password_DAL.php';
 
 class Password
 {
