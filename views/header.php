@@ -4,6 +4,7 @@ require 'F:\xampp\htdocs\PHPGroep3/public/paths/path.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+require_once 'F:\xampp\htdocs\PHPGroep3/logic/Message.php';
 ?>
 <html>
 <head>

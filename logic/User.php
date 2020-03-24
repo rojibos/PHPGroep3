@@ -65,5 +65,12 @@ class User
         {
             return;
         }
+        else {
+            return true;
+        }
+    }
+    public function changePassword($email, $password)
+    {
+        $this->updatePassword($email, $password);
     }
 }

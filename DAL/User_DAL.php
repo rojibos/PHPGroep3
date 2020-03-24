@@ -1,5 +1,5 @@
 <?php
-require 'F:\xampp\htdocs\PHPGroep3/DAL/Database.php';
+require_once 'F:\xampp\htdocs\PHPGroep3/DAL/Database.php';
 
 class User_DAL extends Database
 {
@@ -34,5 +34,12 @@ class User_DAL extends Database
         $stmt->execute(['username' => $username]);
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         return $result;
+    }
+    function updatePassword($email, $password)
+    {
+        $sql = "UPDATE user SET password = :password WHERE email = :email";
+        $stmt = $this->dbconnenct()->prepare($sql);
+        $stmt->execute(['password' => $password, 'email' => $email]);
+        return;
     }
 }
