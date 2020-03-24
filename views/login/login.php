@@ -9,6 +9,8 @@ require_once '../../includes/loginInc.php';
                 Name: <input type="text" name="username" placeholder="Name"><br>
                 Password: <input type="password" name="userpassword" placeholder="******"><br>
                 <input type="submit" name="login" value="Login">
+                <input type="submit" name="register" value="Register account">
+
             </form>
     </main>
 <?php
