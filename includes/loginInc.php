@@ -17,6 +17,7 @@ if (isset($_POST['login']))
         exit();
     }
 }
-else{
-    //header("Location: ../../views/login/login.php");
+elseif(isset($_POST['register']))
+{
+    header("Location: ../../views/register/register.php");
 }
