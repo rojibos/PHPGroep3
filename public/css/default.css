@@ -123,3 +123,61 @@ body{
 #cartBtn:hover{
     -webkit-filter: brightness(0) invert(1);
 }
+
+/*start standard form*/
+.standardFormWrapper{
+    display: block;
+    background-color: lightgray;
+    width: 35%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+}
+.standardForm{
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.standardForm input[type=submit]{
+    border: none;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: #FFBE00;
+    font-family: Moonlightning;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+}
+.standardForm input[type=text]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 48%;
+}
+.standardForm input[type=password]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 48%;
+}
+.standardForm input[type=date]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 18%;
+}
+.formMessage {
+    float: right;
+}
+.formMessage input[type=text]{
+    height: 120px;
+}
