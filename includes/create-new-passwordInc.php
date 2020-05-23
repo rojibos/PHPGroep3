@@ -1,7 +1,7 @@
 <?php
-require_once '../logic/User.php';
-require_once '../logic/Password.php';
-require_once '../logic/Mail.php';
+require_once '../../logic/User.php';
+require_once '../../logic/Password.php';
+require_once '../../logic/Mail.php';
 $users = new User();
 $resetPassword = new Password();
 if (isset($_POST['resetSubmit']))

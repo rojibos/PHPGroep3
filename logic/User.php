@@ -1,5 +1,5 @@
 <?php
-require_once '../DAL/User_DAL.php';
+require_once 'F:\xampp\htdocs\PHPGroep3\DAL/User_DAL.php';
 
 class User
 {

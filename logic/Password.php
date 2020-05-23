@@ -1,5 +1,5 @@
 <?php
-require_once '../DAL/Password_DAL.php';
+require_once '../../DAL/Password_DAL.php';
 
 class Password
 {

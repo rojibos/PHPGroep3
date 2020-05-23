@@ -1,6 +1,6 @@
 <?php
-require '../public/paths/path.php';
-require_once '../logic/Message.php';
+//require '../public/paths/path.php';
+require '../../logic/Message.php';
 ?>
 <html>
 <head>

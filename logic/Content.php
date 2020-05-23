@@ -1,7 +1,7 @@
 <?php
 
-require '../DAL/Content_DAL.php';
-require '../models/Content_Model.php';
+require '../../DAL/Content_DAL.php';
+require '../../models/Content_Model.php';
 
 
 class Content

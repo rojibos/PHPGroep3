@@ -533,15 +533,19 @@ hr{
     width: 200px;
     margin: 10px;
     padding: 0;
-
+}
+.ticketcontainer img
+{
+    width: 108%;
+    height: 108%;
 }
 .block
 {
     display: block;
     background-color: black;
     opacity: 0.6;
-    width: 180px;
-    height: 280px;
+    width: 190px;
+    height: 300px;
     border-radius: 20px;
     position: absolute;
     top: 50%;

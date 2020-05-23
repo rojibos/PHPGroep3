@@ -51,11 +51,11 @@ $ticket = new Ticket();
                                         <div class="ticketcontainer2">
                                             <div class="block2"></div>
                                             <img class="ticketImg" src="../../public/images/tickets/<?php echo $row['img'] ?>">
+                                            <h3><?php echo $row['event'] ?></h3>
+                                            <h4>Price: €<?php echo $row['price'] ?></h4>
                                             <form class="ticketForm"
                                                   action="../../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
                                                   method="post">
-                                                <h3><?php echo $row['event'] ?></h3>
-                                                <h4>Price: €<?php echo $row['price'] ?></h4>
                                                 <input type="hidden" name="price"
                                                        value="<?php echo $row['price'] ?>">
                                                 <input type="text" name="amount" placeholder="Amount"></br>
