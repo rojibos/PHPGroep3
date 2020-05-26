@@ -12,7 +12,7 @@ if (isset($_POST['resetPw']))
     $selectorBytes = mt_rand(10000000,99999999);
     $selector = bin2hex($selectorBytes);
     $token = mt_rand(100000000000000000000000000000000,99999999999999999999999999999999);
-    $urlPasswordReset = "www.hfa3.infhaarlem.nl/views/create-new-password/create-new-password.php?selector=" . $selector . "&validator=" .bin2hex($token);
+    $urlPasswordReset = "www.hfa3.infhaarlem.nl/views/create-new-password.php?selector=" . $selector . "&validator=" .bin2hex($token);
 
     $expirationDate = date("U") + 1800;
 
@@ -26,18 +26,18 @@ if (isset($_POST['resetPw']))
 
     if (empty($userEmail))
     {
-        header("Location: ../views/password-reset/password-reset.php?error=emptyfields");
+        header("Location: ../views/password-reset.php?message=emptyfields");
         exit();
     }
     else{
         if($users->emailCheck($userEmail))
         {
             $email->sendResetMail($userEmail, $urlPasswordReset);
-            header("Location: ../views/succes/succes.php?succes=emailsend");
+            header("Location: ../views/succes.php?message=emailsend");
         }
         else
         {
-            header("Location: ../views/password-reset/password-reset.php?error=noemail");
+            header("Location: ../views/password-reset.php?message=noemail");
         }
 
         exit();

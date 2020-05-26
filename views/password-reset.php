@@ -9,9 +9,9 @@ require_once "header.php";
                 <input type="submit" name="resetPw" value="Send">
             </form>
             <?php
-            if (isset($_GET['error'])) {
+            if (isset($_GET['message'])) {
                 $message = new Message();
-                echo $message->errorMessages($_GET['error']);
+                echo $message->displayMessages($_GET['message']);
             }
             ?>
         </section>

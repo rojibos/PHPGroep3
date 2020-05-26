@@ -28,9 +28,9 @@ require_once "header.php";
 
                 }
             }
-            if (isset($_GET['error'])) {
+            if (isset($_GET['message'])) {
                 $message = new Messages();
-                echo $message->errorMessages($_GET['error'], $_SESSION['language']);
+                echo $message->displayMessages($_GET['message']);
             }
             ?>
             </form>

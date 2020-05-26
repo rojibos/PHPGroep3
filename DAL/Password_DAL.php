@@ -1,5 +1,5 @@
 <?php
-require 'Database.php';
+require_once 'Database.php';
 
 class Password_DAL extends Database
 {

@@ -1,7 +1,8 @@
 <?php
 require_once 'header.php';
 require '../includes/contactInc.php';
-
+require_once '../logic/Message.php';
+$message = new Message();
 ?>
 <main>
     <section class="standardFormWrapper">
@@ -19,6 +20,12 @@ require '../includes/contactInc.php';
             Subject:<br><input type="text" name="subject" placeholder="Subject"><br>
 
             <input class="submitBtn" type="submit" name="sendMessage" value="Send message">
+
+            <?php
+            if (isset($_GET['message'])) {
+                echo '<p style="color:#FF0000";>'.$message->displayMessages($_GET['message']).'</p>';
+            }
+            ?>
         </form>
     </section>
 </main>

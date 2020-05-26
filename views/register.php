@@ -1,6 +1,8 @@
 <?php
 require_once 'header.php';
 require_once '../includes/registerInc.php';
+require_once '../logic/Message.php';
+$message = new Message();
 ?>
 <main>
     <section class="standardFormWrapper">
@@ -12,7 +14,13 @@ require_once '../includes/registerInc.php';
             Password: <input type="password" name="userpassword" placeholder="******"><br>
             Retype Password <input type="password" name="userpasswordretype" placeholder="******"><br>
             <input type="submit" name="register" value="Register">
+            <?php
+            if (isset($_GET['message'])) {
+                echo '<p style="color:#FF0000";>'.$message->displayMessages($_GET['message']).'</p>';
+            }
+            ?>
         </form>
+
 </main>
 <?php
 require_once 'footer.php';

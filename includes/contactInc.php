@@ -14,10 +14,10 @@ if (isset($_POST['sendMessage']))
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     if (empty($userMail) || empty($user) || empty($subject) || empty($message)){
-        header("Location: ../views/contact/contact.php?error=fieldsempty");
+        header("Location: ../views/contact.php?message=fieldsempty");
     }
     elseif (!filter_var($userMail, FILTER_VALIDATE_EMAIL)){
-        header("Location: ../views/contact/contact.php?error=invalidmail");
+        header("Location: ../views/contact.php?message=invalidmail");
     }
     elseif(!empty($userMail)){
         $mail = new Mail();
