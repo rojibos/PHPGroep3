@@ -1,5 +1,5 @@
 <?php
-require_once '../../DAL/Ticket_DAL.php';
+require_once '../DAL/Ticket_DAL.php';
 
 class Ticket extends Ticket_DAL
 {

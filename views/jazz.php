@@ -1,6 +1,6 @@
 <?php
-    require '../header.php';
-    require '../../logic/Content.php';
+    require 'header.php';
+    require '../logic/Content.php';
 $content = new Content();
 $data = $content->GetAllContent('jazz');
 ?>
@@ -41,7 +41,7 @@ $data = $content->GetAllContent('jazz');
                 <form action="../../views/tickets/ticketpage.php?event=jazz">
                     <button type="submit" class ="gototicketpage" id="gototicketpagejazz">TICKETS</button>
                 </form>
-                <form action="../../views/program/program.php">
+                <form action="program.php">
                     <button type="submit" class = "gotoprogrammpage" id="gotoprogrammpagejazz">PROGRAMM</button>
                 </form>
             </div>
@@ -49,5 +49,5 @@ $data = $content->GetAllContent('jazz');
     </div>
 </main>
 <?php
-    require '../footer.php';
+    require 'footer.php';
 ?>

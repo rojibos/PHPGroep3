@@ -1,7 +1,7 @@
 <?php
+require 'Database.php';
 
-
-class Password_DAL
+class Password_DAL extends Database
 {
     function deleteTokenRow($userMail)
     {

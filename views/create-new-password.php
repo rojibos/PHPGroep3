@@ -1,5 +1,5 @@
 <?php
-require_once "../header.php";
+require_once "header.php";
 ?>
     <main>
         <section class="standardFormWrapper">
@@ -37,4 +37,4 @@ require_once "../header.php";
         </section>
     </main>
 <?php
-require "../footer.php";
+require "footer.php";

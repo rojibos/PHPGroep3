@@ -50,10 +50,10 @@ class User
                 $_SESSION['email'] = $user['email'];
                 $_SESSION['rank'] = $user['rank'];
                 if ($_SESSION['rank'] = 'customer'){
-                    header("location: ../views/index/index.php?login=succes");
+                    header("location: ../views/index.php?login=succes");
                 }
                 else{
-                    header("location: ../views/index/index.php?login=succes");
+                    header("location: ../views/index.php?login=succes");
                 }
                 exit();
             }

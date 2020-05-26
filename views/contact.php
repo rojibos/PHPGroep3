@@ -1,12 +1,12 @@
 <?php
-require_once '../header.php';
-require '../../includes/contactInc.php';
+require_once 'header.php';
+require '../includes/contactInc.php';
 
 ?>
 <main>
     <section class="standardFormWrapper">
         <h2>Contact form</h2>
-        <form action="../../includes/contactInc.php" class="standardForm" method="post">
+        <form action="../includes/contactInc.php" class="standardForm" method="post">
             <div class="formMessage">
                 Message:<br><input type="text" name="message" placeholder="Write your message here.">
             </div>
@@ -23,4 +23,4 @@ require '../../includes/contactInc.php';
     </section>
 </main>
 <?php
-require_once '../footer.php';
+require_once 'footer.php';

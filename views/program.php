@@ -1,6 +1,6 @@
 <?php
-require_once '../header.php';
-require '../../logic/Ticket.php';
+require_once 'header.php';
+require '../logic/Ticket.php';
 $program = new Ticket();
 ?>
     <main>
@@ -36,7 +36,7 @@ $program = new Ticket();
                             <?php
                             foreach ($programDay as $row) {
                                 if ($row['venue'] != 'All Access') {
-                                    echo '<tr><td><a href="../ticketpage/tickets.php?pagetype=' . $type . '"><p>' . $row['event'] . '<br>' . $row['date_time'] . '<br>' . $row['venue'] . '</p></a></td></tr>';
+                                    echo '<tr><td><a href="../views/tickets.php?pagetype=' . $type . '"><p>' . $row['event'] . '<br>' . $row['date_time'] . '<br>' . $row['venue'] . '</p></a></td></tr>';
                                 }
                                 }
                             ?>
@@ -45,5 +45,5 @@ $program = new Ticket();
         </section>
     </main>
 <?php
-require_once '../footer.php';
+require_once 'footer.php';
 

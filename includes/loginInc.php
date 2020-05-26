@@ -8,16 +8,16 @@ if (isset($_POST['login']))
 
     if (empty($username) || empty($password))
     {
-        header("Location: PHPGroep3/views/login/login.php?error=emptyfields");
+        header("Location: ../views/login.php?error=emptyfields");
         exit();
     }
     else{
         $users->login($username, $password);
-        header("Location: PHPGroep3/views/login/login.php?error=wrongcredentials");
+        header("Location: ../views/login.php?error=wrongcredentials");
         exit();
     }
 }
 elseif(isset($_POST['register']))
 {
-    header("Location: ../../views/register/register.php");
+    header("Location: ../views/register.php");
 }

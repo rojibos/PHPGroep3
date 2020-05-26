@@ -1,5 +1,5 @@
 <?php
-require_once '../header.php';
+require_once 'header.php';
 require_once 'F:\xampp\htdocs\PHPGroep3/logic/Message.php';
 $message = new Message();
 ?>
@@ -19,4 +19,4 @@ $message = new Message();
         </section>
     </main>
 <?php
-require_once '../footer.php';
+require_once 'footer.php';

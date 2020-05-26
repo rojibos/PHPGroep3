@@ -1,5 +1,5 @@
 <?php
-require '../../logic/Mail.php';
+require '../logic/Mail.php';
 if (isset($_POST['sendMessage']))
 {
     if (!isset($_SESSION['username'])){

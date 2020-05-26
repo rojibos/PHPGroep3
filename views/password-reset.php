@@ -1,10 +1,10 @@
 <?php
-require_once "../header.php";
+require_once "header.php";
 ?>
     <main>
         <section class="standardFormWrapper">
             <h2>Request password reset.</h2>
-            <form action="../../includes/reset-passwordInc.php" class="standardForm" method="post">
+            <form action="../includes/reset-passwordInc.php" class="standardForm" method="post">
                 <input type="text" name="email" placeholder="E-mail"><br>
                 <input type="submit" name="resetPw" value="Send">
             </form>
@@ -17,4 +17,4 @@ require_once "../header.php";
         </section>
     </main>
 <?php
-require "../footer.php";
+require "footer.php";

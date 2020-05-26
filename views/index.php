@@ -1,5 +1,5 @@
 <?php
-require '../header.php';
+require 'header.php';
 ?>
 
 <main>
@@ -15,7 +15,7 @@ require '../header.php';
             <section>
                 <button class="gototicketpage" onclick="GoToPage('tickets')">TICKETS</button><button class="gotoprogrammpage" onclick="GoToPage('programm')">PROGRAMM</button>
             </section>
-            <img src="../../public/images/moreinfo.png" id="moreinfo" onclick="ScrollWin()">
+            <img src="../public/images/moreinfo.png" id="moreinfo" onclick="ScrollWin()">
             <script>
                 function ScrollWin(){
                     window.scrollBy(0, 740);
@@ -40,13 +40,13 @@ require '../header.php';
             <hr class="indexintrosplit">
 
             <div id="clickables">
-                <img src="../../public/images/jazztickets.png" class="eventchose" id="jazzclick" onclick='GoToPage("jazz")'>
+                <img src="../public/images/jazztickets.png" class="eventchose" id="jazzclick" onclick='GoToPage("jazz")'>
                 <div id="jazztext"><h4>JAZZ</h4></div>
-                <img src="../../public/images/dancetickets.png" class="eventchose" id="danceclick" onclick='GoToPage("dance")'>
+                <img src="../public/images/dancetickets.png" class="eventchose" id="danceclick" onclick='GoToPage("dance")'>
                 <div id="dancetext"><h4>DANCE</h4></div>
-                <img src="../../public/images/foodtickets.png" class="eventchose" id="foodclick" onclick='GoToPage("food")'>
+                <img src="../public/images/foodtickets.png" class="eventchose" id="foodclick" onclick='GoToPage("food")'>
                 <div id="foodtext"><h4>FOOD</h4></div>
-                <img src="../../public/images/historictickets.png" class="eventchose" id="historicclick" onclick='GoToPage("historic")'>
+                <img src="../public/images/historictickets.png" class="eventchose" id="historicclick" onclick='GoToPage("historic")'>
                 <div id="historictext"><h4>HISTORIC</h4></div>
             </div>
             <script>
@@ -70,6 +70,6 @@ require '../header.php';
 </main>
 
 <?php
-require '../footer.php';
+require 'footer.php';
 ?>
 

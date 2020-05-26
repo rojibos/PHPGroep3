@@ -1,18 +1,18 @@
 <?php
-require_once '../header.php';
-require '../../logic/Ticket.php';
+require_once 'header.php';
+require '../logic/Ticket.php';
 $ticket = new Ticket();
 ?>
 <main>
     <section class="headerEvent">
-        <img src="../../public/images/headertickets.png">
+        <img src="../public/images/headertickets.png">
         <h1>Tickets</h1>
     </section>
     <section class="navigationTickets">
         <ul>
-            <li><a href="tickets.php?pagetype=dance"><p>Dance</p><img src="../../public/images/dancetickets.png"/></a></li>
-            <li><a href="tickets.php?pagetype=jazz"><p>Jazz</p><img src="../../public/images/jazztickets.png"></a></li>
-            <li><a href="tickets.php?pagetype=food"><p>Food</p><img src="../../public/images/foodtickets.png"></a></li>
+            <li><a href="tickets.php?pagetype=dance"><p>Dance</p><img src="../public/images/dancetickets.png"/></a></li>
+            <li><a href="tickets.php?pagetype=jazz"><p>Jazz</p><img src="../public/images/jazztickets.png"></a></li>
+            <li><a href="tickets.php?pagetype=food"><p>Food</p><img src="../public/images/foodtickets.png"></a></li>
         </ul>
     </section>
     <section class="container">
@@ -50,11 +50,11 @@ $ticket = new Ticket();
                                         ?>
                                         <div class="ticketcontainer2">
                                             <div class="block2"></div>
-                                            <img class="ticketImg" src="../../public/images/tickets/<?php echo $row['img'] ?>">
+                                            <img class="ticketImg" src="../public/images/tickets/<?php echo $row['img'] ?>">
                                             <h3><?php echo $row['event'] ?></h3>
                                             <h4>Price: €<?php echo $row['price'] ?></h4>
                                             <form class="ticketForm"
-                                                  action="../../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
+                                                  action="../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
                                                   method="post">
                                                 <input type="hidden" name="price"
                                                        value="<?php echo $row['price'] ?>">
@@ -71,9 +71,9 @@ $ticket = new Ticket();
                                         <th>
                                             <div class="ticketcontainer">
                                                 <div class="block"></div>
-                                                <img class="ticketImg" src="../../public/images/tickets/<?php echo $row['img'] ?>">
+                                                <img class="ticketImg" src="../public/images/tickets/<?php echo $row['img'] ?>">
                                                 <form class="ticketForm"
-                                                      action="../../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
+                                                      action="../includes/ticketpageInc.php?addticket=<?php echo $row['ticket_id'] ?>&ticket=<?php echo $row['event'] ?>"
                                                       method="post">
                                                     <h3><?php echo $row['event'] ?></h3>
                                                     <h4>At: <?php echo $row['venue'] ?></h4>
@@ -103,3 +103,4 @@ $ticket = new Ticket();
     </main>
 
 <?php
+require 'footer.php';

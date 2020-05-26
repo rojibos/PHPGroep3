@@ -3,6 +3,7 @@
 
 class Message
 {
+
     function errorMessages($type)
     {
         $message = '';
