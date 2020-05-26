@@ -15,7 +15,7 @@ require 'header.php';
             <section>
                 <button class="gototicketpage" onclick="GoToPage('tickets')">TICKETS</button><button class="gotoprogrammpage" onclick="GoToPage('programm')">PROGRAMM</button>
             </section>
-            <img src="../public/images/moreinfo.png" id="moreinfo" onclick="ScrollWin()">
+            <img src="../public/images/moreinfo2.png" id="moreinfo" onclick="ScrollWin()">
             <script>
                 function ScrollWin(){
                     window.scrollBy(0, 740);
@@ -52,15 +52,15 @@ require 'header.php';
             <script>
                 function GoToPage(event){
                     if(event == 'jazz'){
-                        window.location = "../../jazz/jazz.php";
+                        window.location = "../views/jazz.php";
                     }else if(event == 'dance'){
-                        window.location = "../../dance/dance.php";
+                        window.location = "../views/dance.php";
                     }else if(event == 'food'){
-                        window.location = "../../food/food.php";
+                        window.location = "../views/food.php";
                     }else if(event == 'tickets'){
-                        window.location = "../../ticket/ticket.php";
+                        window.location = "../views/tickets.php";
                     }else if(event == 'programm'){
-                        window.location = "../../program/program.php";
+                        window.location = "../views/program.php";
                     }
                 }
             </script>

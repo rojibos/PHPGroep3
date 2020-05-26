@@ -526,6 +526,14 @@ hr{
 
 /*start tickets*/
 
+.ticketpageMain{
+    background-image: url(../images/bgSite.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+}
+
 .ticketcontainer
 {
     position: relative;

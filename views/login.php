@@ -13,7 +13,7 @@ $message = new Message();
                 Password: <input type="password" name="userpassword" placeholder="******"><br>
                 <?php
                 if (isset($_GET['message'])) {
-                    echo '<p style="color:#FF0000";>'.$message->displayMessages($_GET['message']).'</p>';
+                    echo $message->displayMessages($_GET['message']);
                 }
                 ?>
                 <input type="submit" name="login" value="Login">

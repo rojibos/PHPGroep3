@@ -5,9 +5,9 @@ define('DB_PASS','');
 define('DB_NAME', 'haarlemfestival');
 
 //define('DB_HOST','localhost');
-//define('DB_USER', 'root');
-//define('DB_PASS', '');
-//define('DB_NAME', 'haarlemfestival');
+//define('DB_USER', 'hfa3');
+//define('DB_PASS', 'vlbEv6Vs');
+//define('DB_NAME', 'hfa3_db');
 
 class Database
 {

@@ -3,7 +3,7 @@ require_once 'header.php';
 require '../logic/Ticket.php';
 $ticket = new Ticket();
 ?>
-<main>
+<main class="ticketpageMain">
     <section class="headerEvent">
         <img src="../public/images/headertickets.png">
         <h1>Tickets</h1>
