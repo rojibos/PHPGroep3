@@ -140,18 +140,32 @@ body{
 /* Jazz eventpage */
 /*head*/
 .container{
+    float: top;
     padding: 0;
     margin: 0;
 }
 #headerjazz{
+    font-size: 0;
     width: 100%;
     height: 30vh;
     background-image: url("../images/JazzHeaderImage.jpg");
     background-size: cover;
 }
+#headerdance{
+    font-size: 3em;
+    width: 100%;
+    padding: 0.5em;
+    background-image: url("../images/DanceHeaderImage.jpg");
+    background-size: cover;
+}
 .titel{
-    font-size: 600%;
     font-family: Moonlightning;
+    color: white;
+    text-align: center;
+}
+.underTitel{
+    font-family: Moonlightning;
+    font-size: 1em;
     color: white;
     text-align: center;
 }
@@ -172,8 +186,13 @@ hr{
     margin-right: 70%;
 }
 .inleiding{
-    height: 15vh;
+    margin: auto;
+    padding: 4vh;
+    width: 60%;
+    text-align: center;
     background-color: white;
+    font-weight: bold;
+    font-size: 1.05em;
 }
 #mainhall{
     background-image: url("../images/EventJazzMainHal.png");
@@ -186,6 +205,22 @@ hr{
 }
 #grotemarkt{
     background-image: url("../images/EventJazzGrotenMarkt.png");
+}
+#lineup{
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-image: url("../images/EventJazzGrotenMarkt.png");
+}
+#venues{
+    padding: 1em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-image: url("../images/EventJazzGrotenMarkt.png");
+}
+#venues h1
+{
+    font-size: 2em;
 }
 .article{
 
@@ -229,6 +264,7 @@ hr{
     font-size: 150%;
     font-weight: bold;
     cursor: pointer;
+    ;
 }
 .gotoprogrammpage{
     background-color: #FFBE00;
