@@ -1,5 +1,5 @@
 <?php
-require PATH.'models/Ticket_model.php';
+require '../models/Ticket_model.php';
 session_start();
 if (isset($_POST['add']) && $_POST['amount'] > 0)
 {

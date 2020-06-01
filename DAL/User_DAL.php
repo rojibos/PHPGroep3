@@ -32,8 +32,8 @@ class User_DAL extends Database
         $sql = "SELECT name, password, email, rank FROM user WHERE name = :username";
         $stmt = $this->dbconnenct()->prepare($sql);
         $stmt->execute(['username' => $username]);
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        return $result;
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+
     }
     function updatePassword($email, $password)
     {

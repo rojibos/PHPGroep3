@@ -13,12 +13,13 @@ $message = new Message();
                 Password: <input type="password" name="userpassword" placeholder="******"><br>
                 <?php
                 if (isset($_GET['message'])) {
-                    echo $message->displayMessages($_GET['message']);
+                    echo '<p style="color:#FF0000";>'.$message->displayMessages($_GET['message']).'</p>';
                 }
                 ?>
                 <input type="submit" name="login" value="Login">
                 <input type="submit" name="register" value="Register account">
             </form>
+        </section>
     </main>
 <?php
 require_once 'footer.php';

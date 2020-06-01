@@ -16,7 +16,7 @@ require_once "header.php";
                 if (ctype_xdigit($selector) == true && ctype_xdigit($validator) == true)
                 {
                     ?>
-                    <form class="standardform" action="../includes/create-new-password.inc.php" method="post">
+                    <form class="standardform" action="../includes/create-new-passwordInc.php" method="post">
                         <input type="hidden" name="selector" value="<?php echo $selector;?>">
                         <input type="hidden" name="validator" value="<?php echo $validator;?>">
                         <input type="password" name="password" placeholder="New password"><br>

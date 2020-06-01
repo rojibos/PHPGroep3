@@ -1,5 +1,5 @@
 </body>
 <footer>
-    (C)Haarlem Festival 2020
+    &copy;Haarlem Festival 2020
 </footer>
 </html>

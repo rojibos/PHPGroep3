@@ -2,8 +2,8 @@
 require '../logic/Mail.php';
 if (isset($_POST['sendMessage']))
 {
-    if (!isset($_SESSION['username'])){
-        $userMail = $_SESSION['userMail'];
+    if (isset($_SESSION['username'])){
+        $userMail = $_SESSION['email'];
         $user = $_SESSION['username'];
     }
     else{
@@ -13,14 +13,19 @@ if (isset($_POST['sendMessage']))
 
     $subject = $_POST['subject'];
     $message = $_POST['message'];
+
     if (empty($userMail) || empty($user) || empty($subject) || empty($message)){
         header("Location: ../views/contact.php?message=fieldsempty");
+        exit();
     }
     elseif (!filter_var($userMail, FILTER_VALIDATE_EMAIL)){
         header("Location: ../views/contact.php?message=invalidmail");
+        exit();
     }
-    elseif(!empty($userMail)){
+    else{
         $mail = new Mail();
         $mail->contactMail($userMail, $user, $subject, $message);
+        header("Location: ../views/succes.php?message=contactsend");
     }
 }
+

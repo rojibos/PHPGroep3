@@ -20,7 +20,7 @@ $message = new Message();
             }
             ?>
         </form>
-
+    </section>
 </main>
 <?php
 require_once 'footer.php';

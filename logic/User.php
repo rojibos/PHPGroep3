@@ -1,5 +1,5 @@
 <?php
-require_once 'F:\xampp\htdocs\PHPGroep3\DAL/User_DAL.php';
+require_once '../DAL/User_DAL.php';
 
 class User
 {
@@ -38,8 +38,7 @@ class User
     }
     public function login($username, $password)
     {
-        $userDAL = new User_DAL();
-        $user = $userDAL->getUserPassword($username);
+        $user = $this->DAL->getUserPassword($username);
         if ($user != null)
         {
             $pwCheck = password_verify($password, $user['password']);
@@ -50,7 +49,7 @@ class User
                 $_SESSION['email'] = $user['email'];
                 $_SESSION['rank'] = $user['rank'];
                 if ($_SESSION['rank'] = 'customer'){
-                    header("location: ../views/index.php?login=succes");
+                    header("location: ../views/index.php");
                 }
                 else{
                     header("location: ../views/index.php?login=succes");
@@ -66,6 +65,6 @@ class User
 
     public function changePassword($email, $password)
     {
-        $this->updatePassword($email, $password);
+        $this->DAL->updatePassword($email, $password);
     }
 }

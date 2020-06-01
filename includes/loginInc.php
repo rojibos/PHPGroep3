@@ -1,6 +1,7 @@
 <?php
-require 'F:\xampp\htdocs\PHPGroep3\logic\User.php';
+require "../logic/User.php";
 $users = new User();
+
 if (isset($_POST['login']))
 {
     $username = $_POST['username'];

@@ -1,21 +1,21 @@
 <?php
 require_once 'header.php';
-require_once 'F:\xampp\htdocs\PHPGroep3/logic/Message.php';
+require_once '../logic/Message.php';
 $message = new Message();
 ?>
     <main>
-        <section>
+        <section class="succespage">
             <h1>Succes</h1>
             <?php
-                if (isset($_GET['succes']))
+                if (isset($_GET['message']))
                 {
-                    echo $message->succesMessages($_GET['succes'], $_SESSION['language']);
+                    echo "<p>".$message->displayMessages($_GET['message'])."<p>";
                 }
                 else{
                     header('Location: index.php');
                 }
                 ?>
-            <div class="aBtn"><a href="../index/index.php">Return to homepage</a></div>
+            <div class="aBtn"><a href="index.php">Return to homepage</a></div>
         </section>
     </main>
 <?php

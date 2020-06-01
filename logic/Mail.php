@@ -21,6 +21,7 @@ class Mail
 
         $conformationMassage = "Your message has been submitted. We will respond as soon as possible.";
         $conformationSubject = "Message send";
+        return;
     }
     function sendResetMail($email, $url)
     {

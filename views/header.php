@@ -22,7 +22,7 @@ session_start();
                 <div class="userMenu">
                     <button class="userMenuBtn"><img src="../public/images/usermenu.png"></button>
                     <div class="userMenuContent">
-                        <a href="dance/dance.php">Profile</a>
+                        <a href="dance.php">Profile</a>
                         <a href="../includes/logoutInc.php">Logout</a>
                     </div>
                 </div>

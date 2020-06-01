@@ -1,7 +1,7 @@
 <?php
-require_once '../logic/User.php';
-require_once '../logic/Password.php';
-require_once '../logic/Mail.php';
+require '../logic/User.php';
+require '../logic/Password.php';
+require '../logic/Mail.php';
 $users = new User();
 $resetPassword = new Password();
 $email = new Mail();
