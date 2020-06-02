@@ -39,6 +39,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <a href="cart/cart.php"><img src="../../public/images/cart.png" id="cartBtn"></a>
         <ul>
             <?php
+            echo '<li><a href="../../views/search/search.php">Search</a></li>';
             echo '<li><a href="../../views/contact/contact.php">Contact</a></li>';
             echo '<li><a href="../../views/ticketpage/tickets.php">Tickets</a></li>';
             echo '<li><a href="../../views/program/program.php">Programme</a></li>';
