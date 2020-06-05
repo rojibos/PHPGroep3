@@ -13,7 +13,7 @@ body{
     max-height: 46px;
     padding-bottom: 14px;
     font-size: 1.8em;
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*position: fixed;*/
 }
 
