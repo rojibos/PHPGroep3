@@ -27,44 +27,44 @@ $data = $content->GetAllContent('food');
                 <button class="btn" onclick="filterSelection('Aziatisch')"> Aziatisch</button>
             </div>
             <article  class="filterDiv Dutch, fish and seafood, European " id="mrmrs">
-                <h2><?php echo $data[3]->text; ?></h2>
+                <h2><?php echo $data[2]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[2]->text;  ?></p>
+                <p><?php  echo $data[3]->text;  ?></p>
             </article>
             <article class="filterDiv Steakhouse, Argentinian, European"  id="ratatouille">
-                <h2><?php  echo $data[5]->text; ?></h2>
+                <h2><?php  echo $data[4]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[6]->text; ?></p>
+                <p><?php  echo $data[5]->text; ?></p>
             </article>
             <article class="filterDiv Dutch, fish and seafood, European" id="ML">
-                <h2><?php  echo $data[7]->text; ?></h2>
+                <h2><?php  echo $data[6]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[6]->text; ?></p>
+                <p><?php  echo $data[7]->text; ?></p>
             </article>
             <article class="filterDiv Dutch, French, European"   id="fris">
-                <h2><?php  echo $data[9]->text; ?></h2>
+                <h2><?php  echo $data[8]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[8]->text; ?></p>
+                <p><?php  echo $data[9]->text; ?></p>
             </article>
             <article class="filterDiv Europees, Internationaal,Aziatisch" id="specktakel">
-                <h2><?php  echo $data[11]->text; ?></h2>
+                <h2><?php  echo $data[10]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[10]->text; ?></p>
+                <p><?php  echo $data[11]->text; ?></p>
             </article>
             <article class="filterDiv Steakhouse, Argentinian, European" id="goldenbull">
-                <h2><?php  echo $data[13]->text; ?></h2>
+                <h2><?php  echo $data[12]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[12]->text; ?></p>
+                <p><?php  echo $data[13]->text; ?></p>
             </article>
             <article class="filterDiv Dutch, fish and seafood, European" id="urban">
-                <h2><?php  echo $data[15]->text; ?></h2>
+                <h2><?php  echo $data[14]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[14]->text; ?></p>
+                <p><?php  echo $data[15]->text; ?></p>
             </article>
             <article class="filterDiv Dutch, European, Modern" id="brinkman">
-                <h2><?php  echo $data[17]->text; ?></h2>
+                <h2><?php  echo $data[16]->text; ?></h2>
                 <hr>
-                <p><?php  echo $data[16]->text; ?></p>
+                <p><?php  echo $data[17]->text; ?></p>
             </article>
             <!--        Hier maak ik twee knoppen die naar de programpage en ticketpage gaan. Ik geef een variabele event mee in de url zodat op de ticketpagina direct naar het jazz event kan worden genavigeerd.-->
             <section class="navigationbuttons">
