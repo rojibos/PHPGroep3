@@ -1,5 +1,8 @@
 <?php
 require '../logic/Mail.php';
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 if (isset($_POST['sendMessage']))
 {
     if (isset($_SESSION['username'])){
@@ -15,7 +18,7 @@ if (isset($_POST['sendMessage']))
     $message = $_POST['message'];
 
     if (empty($userMail) || empty($user) || empty($subject) || empty($message)){
-        header("Location: ../views/contact.php?message=fieldsempty");
+        header("Location: ../views/contact.php?message=emptyfields");
         exit();
     }
     elseif (!filter_var($userMail, FILTER_VALIDATE_EMAIL)){

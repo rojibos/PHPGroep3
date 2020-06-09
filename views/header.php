@@ -31,10 +31,15 @@ session_start();
         else{
             echo '<a href="login.php" id="login">Sign in</a>';
         }
+
+        if (isset($_SESSION['ticketsCart']) && !empty(['ticketsCart']))
+        {
+            echo '<a href="cart.php"><img src="../public/images/cartfilled.png" id="cartBtn"></a>';
+        }
+        else{
+            echo '<a href="cart.php"><img src="../public/images/cart.png" id="cartBtn"></a>';
+        }
         ?>
-
-
-        <a href="cart.php"><img src="../public/images/cart.png" id="cartBtn"></a>
         <ul>
             <?php
             echo '<li><a href="../views/contact.php">Contact</a></li>';

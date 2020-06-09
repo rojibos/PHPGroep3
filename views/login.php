@@ -8,7 +8,7 @@ $message = new Message();
         <section class="standardFormWrapper">
             <h2>Login</h2>
             <form action="../includes/loginInc.php" class="standardForm" method="post">
-                Name: <input type="text" name="username" placeholder="Name"><br>
+                Name: <input id="loginUsername" type="text" name="username" placeholder="Name"><br>
                 <a href="password-reset.php" id="wwReset">Forgot password?</a><br>
                 Password: <input type="password" name="userpassword" placeholder="******"><br>
                 <?php

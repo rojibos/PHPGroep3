@@ -11,16 +11,19 @@ class Mail
         mail($to, $subject, $message, $headers);
         return;
     }
-    function contactMail($userMail, $user, $subject, $message)
+    function contactMail($userMail, $user, $userSubject, $userMessage)
     {
         $to = MAIL_WEBSITE;
         $headers = "From: " . $user . " <" . $userMail . ">\r\n";
         $headers .= "Content-type: text/html;charset=UTF-8" . "\r\n";
+        $subject = "Contact Mail";
+        $message = "Contact message from: ". $user . "\r\n";
+        $message .= "E-mail: " . $userMail . "\r\n";
+        $message .= "About: " . $userSubject . "\r\n";
+        $message .= "Message: " . $userMessage;
 
         mail($to, $subject, $message, $headers);
 
-        $conformationMassage = "Your message has been submitted. We will respond as soon as possible.";
-        $conformationSubject = "Message send";
         return;
     }
     function sendResetMail($email, $url)

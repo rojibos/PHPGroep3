@@ -13,7 +13,7 @@ body{
     max-height: 46px;
     padding-bottom: 14px;
     font-size: 1.8em;
-    /*overflow: hidden;*/
+
     /*position: fixed;*/
 }
 
@@ -578,6 +578,7 @@ hr{
     position: relative;
     display: block;
 }
+
 .navigationTickets p
 {
     color: white;
@@ -587,6 +588,13 @@ hr{
     transform: translate(-50%, -50%);
     font-size: 25pt;
     font-family: Moonlightning;
+}
+
+.navigationTickets p:hover
+{
+    top: 28%;
+    color: #FFBE00;
+    font-size: 28pt;
 }
 
 /*start program nav*/
@@ -635,6 +643,11 @@ hr{
 
 /*start tickets*/
 
+.container{
+    height: max-content;
+    margin-bottom: 50px;
+}
+
 .ticketpageMain{
     background-image: url(../images/bgSite.png);
     background-repeat: no-repeat;
@@ -682,6 +695,19 @@ hr{
     padding: 0;
 
 }
+
+.ticketcontainer2 h3
+{
+    padding-top: 14px;
+    margin-bottom: 2px;
+}
+
+.ticketcontainer2 h4
+{
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
 .block2
 {
     display: block;
@@ -722,6 +748,10 @@ hr{
     cursor: pointer;
     margin-top: 5px;
 }
+.ticketForm input[type=submit]:hover
+{
+    color: white;
+}
 .ticketForm input[type=text]
 {
     border: none;
@@ -729,6 +759,29 @@ hr{
     border-radius: 5px;
     text-align: center;
 }
+
+.submitTicketForm{
+    border: none;
+    text-decoration: none;
+    background-color: #FFBE00;
+    font-family: Moonlightning;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.submitTicketForm:hover
+{
+    color: white;
+}
+
+.inputTicketForm{
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
 .tickets{
     margin: auto;
 }
@@ -796,9 +849,9 @@ hr{
 
 /*start standard form*/
 .standardFormWrapper{
-    display: block;
     background-color: lightgray;
     width: 35%;
+    height: max-content;
     border-radius: 10px;
     margin: auto;
     margin-top: 25px;
@@ -821,7 +874,22 @@ hr{
     margin-top: 5px;
     width: 100%;
 }
+
+.standardForm input[type=submit]:hover
+{
+    color: white;
+}
+
 .standardForm input[type=text]{
+    border: none;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    padding: 3px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+#loginUsername{
     border: none;
     margin-bottom: 5px;
     margin-top: 2px;
@@ -829,6 +897,7 @@ hr{
     border-radius: 3px;
     width: 48%;
 }
+
 .standardForm input[type=password]{
     border: none;
     margin-bottom: 5px;
@@ -847,9 +916,42 @@ hr{
 }
 .formMessage {
     float: right;
+    margin: auto;
+    margin-left: 1%;
+    width: 48.5%;
 }
 .formMessage input[type=text]{
     height: 120px;
+}
+
+.formInput {
+    float: left;
+    margin: auto;
+    margin-right: 1%;
+    width: 48.5%;
+}
+
+.formSeperation{
+    float: left;
+    background-color: #FFBE00;
+    width: 1%;
+    height: 140px;
+
+}
+
+.wrapper-column{
+    display: block;
+    background-color: #666666;
+    width: 100px;
+    height: 100px;
+}
+.left-column{
+    float: left;
+    width: 50%;
+}
+.right-column{
+    float: right;
+    width: 50%;
 }
 
 footer
