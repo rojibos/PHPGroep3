@@ -13,16 +13,16 @@ require_once ("mollie/examples/functions.php");
  * See: https://www.mollie.com/dashboard/developers/api-keys
  */
 $mollie = new \Mollie\Api\MollieApiClient();
-$mollie->setApiKey("test_DjJMpBn7PDjRUkt6zcsrMmW7rxHvqR");
+$mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
 
 // print_r($mollie);
-
+$price ="70";
 $payment = $mollie->payments->create([
     "amount" => [
         "currency" => "EUR",
-        "value" => "69.69"
+        "value" => $price
     ],
-    "description" => "Kratjes bier",
+    "description" => "hfa3-united",
     "redirectUrl" => "http://thijsotter.infhaarlem.nl/payment-inf2b/redirect.php",
     "webhookUrl"  => "http://thijsotter.infhaarlem.nl/payment-inf2b/webhook.php",
 ]);

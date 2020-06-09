@@ -3,7 +3,7 @@ require_once ("mollie/vendor/autoload.php");
 require_once ("mollie/examples/functions.php");
 
 $mollie = new \Mollie\Api\MollieApiClient();
-$mollie->setApiKey("test_DjJMpBn7PDjRUkt6zcsrMmW7rxHvqR");
+$mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
 
 	$payment = $mollie->payments->get($_POST["id"]);
     $orderId = $payment->metadata->order_id;

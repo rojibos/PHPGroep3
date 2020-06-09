@@ -1,8 +1,12 @@
 <?php
+static $totalPrice;
+$price=0;
+$times=0;
 require 'header.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
+print_r($totalPrice);
 ?>
 
     <main>
@@ -32,10 +36,16 @@ if (session_status() == PHP_SESSION_NONE) {
 
                     }?>
                 </tr>
+
                 <?php
             }
+
+
+
+
             ?>
         </table>
+
 
         <?php
         }
@@ -46,8 +56,25 @@ if (session_status() == PHP_SESSION_NONE) {
         }
 
         ?>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction() {
+                <?php
+                foreach ($_SESSION['ticketsCart'] as $pPrice) {
+                $price = $pPrice->ticketPrice;
+                $times= $pPrice->ticketAmount;
+                $totalPrice = $price * $times;
+                    print_r($totalPrice);
+            }
+
+                    ?>
+                window.open("cart.php")
+            }
+        </script>
 
     </main>
 
 <?php
 require 'footer.php';
+
+
