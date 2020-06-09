@@ -1,6 +1,7 @@
 <?php
 //require '../public/paths/path.php';
 require '../logic/Message.php';
+require '../models/Ticket_model.php';
 session_start();
 ?>
 <html>

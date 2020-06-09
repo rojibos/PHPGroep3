@@ -1,11 +1,11 @@
 <?php
 
-class TicketModel
+class Ticket_model
 {
-    private $ticketId;
-    private $ticketName;
-    private $ticketAmount;
-    private $ticketPrice;
+    public $ticketId;
+    public $ticketName;
+    public $ticketAmount;
+    public $ticketPrice;
 
     function __construct($ticketId, $ticketName, $ticketAmount, $ticketPrice)
     {
