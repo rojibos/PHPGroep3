@@ -2,6 +2,21 @@ body{
     font-family: Roboto;
     margin: 0;
 }
+
+@font-face {
+    font-family: 'moonlightningregular';
+    src: url('http://hfa3.infhaarlem.nl/public/css/fonts/moonlightning-webfont.woff2') format('woff2'),
+    url('http://hfa3.infhaarlem.nl/public/css/fonts/moonlightning-webfont.woff') format('woff');
+    url('http://hfa3.infhaarlem.nl/public/css/fonts/moonlightning-webfont.ttf') format('truetype');
+
+    src: url('fonts/moonlightning-webfont.woff2') format('woff2'),
+    url('fonts/moonlightning-webfont.woff') format('woff');
+    url('fonts/moonlightning-webfont.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
 /*start header.php*/
 
 /*main navigation of the website*/
@@ -13,7 +28,6 @@ body{
     max-height: 46px;
     padding-bottom: 14px;
     font-size: 1.8em;
-
     /*position: fixed;*/
 }
 
@@ -22,8 +36,8 @@ body{
 #mainNav ul{
     list-style: none;
     display: inline;
-    max-height: 46px;
-}
+    line-height: 30px;
+    }
 
 #mainNav li{
     float: right;
@@ -60,9 +74,11 @@ body{
     color: #F0BE2B;
     text-decoration: none;
     font-size: 1.6em;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     margin-left: 15px;
     margin-right: 15px;
+    line-height: 60px;
+
 }
 #logo:hover{
     color: white;
@@ -98,6 +114,7 @@ body{
     cursor: pointer;
 }
 .userMenu{
+    overflow:visible !important;
     float: right;
     position: relative;
     display: inline-block;
@@ -143,14 +160,14 @@ body{
 /* Jazz eventpage */
 /*head*/
 .container{
-    float: top;
+    display: contents;
     padding: 0;
     margin: 0;
 }
 #headerjazz{
-    font-size: 0;
+    font-size: 3em;
     width: 100%;
-    height: 30vh;
+    padding: 0.5em;
     background-image: url("../images/JazzHeaderImage.jpg");
     background-size: cover;
 }
@@ -172,12 +189,12 @@ body{
     right: 26%;
 }
 .titel{
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     color: white;
     text-align: center;
 }
 .underTitel{
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 1em;
     color: white;
     text-align: center;
@@ -282,21 +299,29 @@ hr{
     background-image: url("../images/brinkman.png");
 }
 #lineup{
-    padding: 1em;
+    background-image: url("../images/dance_lineup.png");
+    background-size: cover;
+    padding: 2em;
     padding-left: 3em;
     padding-right: 3em;
-    background-image: url("../images/EventJazzGrotenMarkt.png");
+}
+#lineup p{
+    width: 50%;
 }
 #venues{
-    padding: 1em;
+    padding: 2em;
     padding-left: 3em;
     padding-right: 3em;
-    background-image: url("../images/EventJazzGrotenMarkt.png");
+    background-image: url("../images/dance_venues.png");
+    background-size: cover;
 }
-#venues h1
-{
-    font-size: 2em;
+#venues p{
+    width: 50%;
 }
+/*#venues h1*/
+/*{*/
+/*    font-size: 2em;*/
+/*}*/
 .article{
 
     font-family: Roboto;
@@ -334,11 +359,17 @@ hr{
     border-radius: 10px;
     border: none;
     margin-top: 2%;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 150%;
     font-weight: bold;
     cursor: pointer;
     }
+
+.gototicketpage:hover
+{
+    color: white
+}
+
 .gotoprogrammpage{
     background-color: #FFBE00;
     padding: 15px 40px 15px 40px;
@@ -346,12 +377,15 @@ hr{
     border: none;
     margin-left: 2%;
     margin-top: 2%;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 150%;
     font-weight: bold;
     cursor: pointer;
 }
-
+.gotoprogrammpage:hover
+{
+    color: white;
+}
 /* indexpage */
 
 #indextop{
@@ -433,6 +467,7 @@ hr{
 /*drop down event menu*/
 
 .eventMenuBtn{
+
     border: none;
     background-color: transparent;
     color: #F0BE2B;
@@ -443,12 +478,14 @@ hr{
     margin-right: 15px;
 }
 .eventMenu{
+
     float: right;
     position: relative;
     display: inline-block;
     margin: 0;
 }
 .eventMenuContent{
+
     display: none;
     position: absolute;
     background-color: black;
@@ -500,7 +537,7 @@ hr{
 .programTable th{
     background-color: #F0BE2B;
     padding: 15px;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     -moz-border-radius-topleft: 5px;
     -moz-border-radius-topright: 5px;
 }
@@ -540,7 +577,7 @@ hr{
 }
 .headerEvent h1
 {
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 60pt;
     position: absolute;
     top: 25%;
@@ -587,7 +624,7 @@ hr{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 25pt;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
 }
 
 .navigationTickets p:hover
@@ -625,7 +662,7 @@ hr{
     position: relative;
     display: block;
     background-color: #F0BE2B;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 2em;
     color: black;
     padding: 15px;
@@ -743,7 +780,7 @@ hr{
     border: none;
     text-decoration: none;
     background-color: #FFBE00;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
@@ -764,7 +801,7 @@ hr{
     border: none;
     text-decoration: none;
     background-color: #FFBE00;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     border-radius: 5px;
     cursor: pointer;
     margin-top: 5px;
@@ -789,7 +826,7 @@ hr{
 {
     margin: 0 auto;
     width: 20%;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     font-size: 30pt;
 
 }
@@ -828,7 +865,7 @@ hr{
     text-align: center;
     font-size: 1.2em;
     background-color: #FFBE00;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
@@ -867,7 +904,7 @@ hr{
     text-decoration: none;
     font-size: 1.2em;
     background-color: #FFBE00;
-    font-family: Moonlightning;
+    font-family: 'moonlightningregular';
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;

@@ -1,6 +1,6 @@
 <?php
 
-class TicketModel
+class Ticket_Model
 {
     private $ticketId;
     private $ticketName;
