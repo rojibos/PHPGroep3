@@ -1,12 +1,12 @@
 <?php
-static $totalPrice;
 $price=0;
 $times=0;
+ $totalPrice='1.00';
 require 'header.php';
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-print_r($totalPrice);
+
 ?>
 
     <main>

@@ -1,4 +1,8 @@
 <?php
+
+
+
+
 /*
  * Make sure to disable the display of errors in production code!
  */
@@ -16,12 +20,14 @@ $mollie = new \Mollie\Api\MollieApiClient();
 $mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
 
 // print_r($mollie);
-$price ="70";
+
 $payment = $mollie->payments->create([
     "amount" => [
         "currency" => "EUR",
-        "value" => $price
-    ],
+        "value" => "1.00"
+
+
+],
     "description" => "hfa3-united",
     "redirectUrl" => "http://thijsotter.infhaarlem.nl/payment-inf2b/redirect.php",
     "webhookUrl"  => "http://thijsotter.infhaarlem.nl/payment-inf2b/webhook.php",
