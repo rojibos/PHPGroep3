@@ -5,8 +5,13 @@ require '../models/Ticket_model.php';
 <section>
     <?php
     print_r($_SESSION['ticketsCart'])
+
     ?>
 
+
+    <script>
+
+    </script>
 </section>
 <?php
 require 'footer.php';

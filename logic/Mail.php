@@ -11,6 +11,15 @@ class Mail
         mail($to, $subject, $message, $headers);
         return;
     }
+    function OrderMail($userMail, $url){
+        $to = $userMail;
+        $headers = "From: HaarlemFestivalCrew <".MAIL_WEBSITE.">\r\n";
+        $headers .= "Content-type: text/html;charset=UTF-8" . "\r\n";
+        $subject = "Your ticket order.";
+        $message = "Thank you for your purchase.<br>Your invoice/tickets link: <a>". $url. "</a><br><br>Haarlem Festival Crew";
+        mail($to, $subject, $message, $headers);
+        return;
+    }
     function contactMail($userMail, $user, $userSubject, $userMessage)
     {
         $to = MAIL_WEBSITE;

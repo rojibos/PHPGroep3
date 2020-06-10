@@ -8,7 +8,7 @@ $data = $content->GetAllContent('jazz');
     <!--    Hier roep ik variabele aan die in de logica laag uit de database worden gehaald, ik zet ze dan in de juiste elementen.-->
     <div class = "container">
         <section id="headerjazz">
-            <h1 class="titel"><?php echo $data[0]->text; ?></h1>
+            <h1 class="titelevent"><?php echo $data[0]->text; ?></h1>
         </section>
         <section class="inleiding">
             <h2><?php  ?></h2>

@@ -7,7 +7,7 @@ $data = $content->GetAllContent('food');
     <main>
         <div class = "container">
             <section id="headerFood">
-                <h1 class="titel"><?php echo $data[0]->text; ?></h1>
+                <h1 class="titelevent"><?php echo $data[0]->text; ?></h1>
             </section>
             <section class="inleiding">
                 <h2><?php  ?></h2>

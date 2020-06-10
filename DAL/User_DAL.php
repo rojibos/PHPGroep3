@@ -29,7 +29,7 @@ class User_DAL extends Database
 
     function getUserPassword($username)
     {
-        $sql = "SELECT name, password, email, rank FROM user WHERE name = :username";
+        $sql = "SELECT user_id, name, password, email, rank FROM user WHERE name = :username";
         $stmt = $this->dbconnenct()->prepare($sql);
         $stmt->execute(['username' => $username]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
