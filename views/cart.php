@@ -17,6 +17,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <table>
 
             <?php
+
             if (!empty($_SESSION['ticketsCart'])) {
             ?>
             <tr>

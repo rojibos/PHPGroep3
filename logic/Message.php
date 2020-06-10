@@ -13,6 +13,7 @@ class Message
     {
         $message = $this->message_DAL->getMessage($name);
         return $message['message'];
+
     }
 //
 //    function displayMessages($name)

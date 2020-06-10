@@ -11,12 +11,36 @@ $mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
      * Update the order in the database.
      */
     database_write($orderId, $payment->status);
-	
+
     if ($payment->isPaid() && !$payment->hasRefunds() && !$payment->hasChargebacks()) {
         /*
          * The payment is paid and isn't refunded or charged back.
+
          * At this point you'd probably want to start the process of delivering the product to the customer.
          */
+        $link = mysqli_connect("localhost", "root", "", "haarlemfestival");
+        $sql = "INSERT INTO ticket_order (order_id, ticket_id, amount, total_price)
+VALUES ('115', '103', '3', '300')";
+        if(mysqli_query($link, $sql)){
+            echo "Records inserted successfully.";
+        } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        }
+
+// Close connection
+        mysqli_close($link);
+    } elseif ($payment->isPaid()) {
+        $link = mysqli_connect("localhost", "root", "", "haarlemfestival");
+        $sql = "INSERT INTO ticket_order (order_id, ticket_id, amount, total_price)
+VALUES ('115', '103', '3', '300')";
+        if(mysqli_query($link, $sql)){
+            echo "Records inserted successfully.";
+        } else{
+            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+        }
+
+// Close connection
+        mysqli_close($link);
     } elseif ($payment->isOpen()) {
         /*
          * The payment is open.
