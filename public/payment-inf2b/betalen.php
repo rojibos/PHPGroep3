@@ -1,11 +1,24 @@
 <?php
+require('../../models/Ticket_model.php');
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+$price=0;
+$times=0;
+$totalPrice='1.00';
 
 
+foreach ($_SESSION['ticketsCart'] as $row) {
+    $price = $row->ticketPrice;
+    $times= $row->ticketAmount;
+    $totalPrice = $price * $times;
 
-
+}
+$totalPrice=number_format($totalPrice, 2);
 /*
  * Make sure to disable the display of errors in production code!
  */
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -24,12 +37,12 @@ $mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
 $payment = $mollie->payments->create([
     "amount" => [
         "currency" => "EUR",
-        "value" => "1.00"
+        "value" => $totalPrice
 
 
 ],
     "description" => "hfa3-united",
-    "redirectUrl" => "http://thijsotter.infhaarlem.nl/payment-inf2b/redirect.php",
+    "redirectUrl" => "http://hfa3.infhaarlem.nl/views/succes.php?message=ordersucces",
     "webhookUrl"  => "http://thijsotter.infhaarlem.nl/payment-inf2b/webhook.php",
 ]);
 
