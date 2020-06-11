@@ -2,10 +2,10 @@
 
 class Ticket_Model
 {
-    private $ticketId;
-    private $ticketName;
-    private $ticketAmount;
-    private $ticketPrice;
+    public $ticketId;
+    public $ticketName;
+    public $ticketAmount;
+    public $ticketPrice;
 
     function __construct($ticketId, $ticketName, $ticketAmount, $ticketPrice)
     {
