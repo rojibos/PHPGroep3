@@ -1,6 +1,6 @@
 <?php
 require_once '../DAL/Message_DAL.php';
-require_once 'Order.php';
+//require_once 'Order.php';
 class Message
 {
     private $message_DAL;
