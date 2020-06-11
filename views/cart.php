@@ -145,8 +145,7 @@ if (!empty($_SESSION['ticketsCart'])) {
                 <td width="10px">&nbsp;</td>
                 <td><?php echo($price[$i]); ?></td>
                 <td width="10px">&nbsp;</td>
-                <td><a href="?add=<?php echo($i); ?>">+</a></td>
-                <td><a href="?take=<?php echo($i); ?>">-</a></td>
+                <td><a href="?add=<?php echo($i); ?>">+</a> <a href="?take=<?php echo($i); ?>">- </a></td>
                 <td><a href="?delete=<?php echo($i); ?>">delete ticket</a></td>
             </tr>
             <?php
@@ -206,8 +205,23 @@ if (!empty($_SESSION['ticketsCart'])) {
             <br>
         </tr>
         <br>
+        <style>
+            .box{
+                border: 1px solid #aaa; /*getting border*/
+                width: 300px;
+                height: 100px;
+                border-radius: 4px; /*rounded border*/
+                color: #000; /*text color*/
+            }
+        </style>
+        <?php
+        $var = 'In case allergies, please let us know here:';
+        echo '<textarea class="box">'.$var.'</textarea>';
+        ?>
+        <br>
         <td><a href="?overwrite=<?php echo($i); ?>">Update order</a></td>
         <br>
+
         <br>
         <td><li><a href="http://620651.infhaarlem.nl/project/herkansing/public/payment-inf2b/betalen.php">GO TO PAYMENTS</a></li></td>
         <?php
@@ -217,4 +231,5 @@ if (!empty($_SESSION['ticketsCart'])) {
     <p>Shoppingcart is empty.</p>
     <?php
 }
+
 ?>
