@@ -1,19 +1,28 @@
 <?php
 require('../../models/Ticket_model.php');
+
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
-$price=0;
-$times=0;
-$totalPrice='1.00';
+$products = array();
+$amounts = array();
+$price = array();
+$totalPrice= 0;
 
+foreach( $_SESSION["ticketsCart"] as $cart)
+    {
+        $products[] = $cart->ticketName;
+        $price[]=$cart->ticketPrice;
+        $amounts[]=$cart->ticketAmount;
 
-foreach ($_SESSION['ticketsCart'] as $row) {
-    $price = $row->ticketPrice;
-    $times= $row->ticketAmount;
-    $totalPrice = $price * $times;
-
-}
+//        print_r($products);
+//        print_r($price);
+//        print_r($amounts);
+    }
+    for ($i=0; $i< count($products); $i++) {
+        $totalPrice = $totalPrice + ($price[$i] * $amounts[$i]);
+    }
+    print_r($totalPrice);
 $totalPrice=number_format($totalPrice, 2);
 /*
  * Make sure to disable the display of errors in production code!
