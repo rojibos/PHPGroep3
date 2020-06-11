@@ -17,20 +17,12 @@ $mollie->setApiKey("test_d3AV4wgJvxWVuUHMMrFrMvuy9vzjxw");
          * The payment is paid and isn't refunded or charged back.
 
          * At this point you'd probably want to start the process of delivering the product to the customer.
+         * //define('DB_HOST','localhost');
+//define('DB_USER', 'hfa3');
+//define('DB_PASS', 'vlbEv6Vs');
+//define('DB_NAME', 'hfa3_db');
          */
-        $link = mysqli_connect("localhost", "root", "", "haarlemfestival");
-        $sql = "INSERT INTO ticket_order (order_id, ticket_id, amount, total_price)
-VALUES ('115', '103', '3', '300')";
-        if(mysqli_query($link, $sql)){
-            echo "Records inserted successfully.";
-        } else{
-            echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-        }
-
-// Close connection
-        mysqli_close($link);
-    } elseif ($payment->isPaid()) {
-        $link = mysqli_connect("localhost", "root", "", "haarlemfestival");
+        $link = mysqli_connect("localhost", "hfa3", "vlbEv6Vs", "hfa3_db");
         $sql = "INSERT INTO ticket_order (order_id, ticket_id, amount, total_price)
 VALUES ('115', '103', '3', '300')";
         if(mysqli_query($link, $sql)){

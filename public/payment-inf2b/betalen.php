@@ -42,8 +42,8 @@ $payment = $mollie->payments->create([
 
 ],
     "description" => "hfa3-united",
-    "redirectUrl" => "http://hfa3.infhaarlem.nl/views/succes.php?message=ordersucces",
-    "webhookUrl"  => "http://hfa3.infhaarlem.nl/public/payment-inf2b/webhook.php",
+    "redirectUrl" => "http://620651.infhaarlem.nl/project/herkansing/views/succes.php?message=ordersucces",
+    "webhookUrl"  => "http://620651.infhaarlem.nl/project/herkansing/public/payment-inf2b/webhook.php",
 ]);
 
 header("Location: " . $payment->getCheckoutUrl(), true, 303);
