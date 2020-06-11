@@ -1,6 +1,7 @@
 <?php
 require_once 'header.php';
 require '../logic/Ticket.php';
+$message = new Message();
 $ticket = new Ticket();
 ?>
     <main class="ticketpageMain">
@@ -8,6 +9,11 @@ $ticket = new Ticket();
             <img src="../public/images/headertickets.png">
             <h1>Tickets</h1>
         </section>
+        <?php
+        if (isset($_GET['message'])) {
+            echo '<section id="errorTickets"><p>'.$message->displayMessages($_GET['message']).'</p></section>';
+        }
+        ?>
         <section class="navigationTickets">
             <ul>
                 <li><a href="tickets.php?pagetype=dance"><p>Dance</p><img src="../public/images/dancetickets.png"/></a>

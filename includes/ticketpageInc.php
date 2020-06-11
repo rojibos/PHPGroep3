@@ -16,5 +16,6 @@ if (isset($_POST['add']) && $_POST['amount'] > 0)
     }
 }
 else{
-    return;
+    header("Location: ../views/tickets.php?message=minusticketamount");
+    exit();
 }

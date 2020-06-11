@@ -650,6 +650,16 @@ hr{
     font-size: 28pt;
 }
 
+#errorTickets
+{
+    margin: auto;
+    padding-top: 1em;
+    text-align: center;
+    color: #FF0000;
+    font-family: Roboto;
+    font-size: 1em;
+}
+
 /*start program nav*/
 
 .navigationProgram
