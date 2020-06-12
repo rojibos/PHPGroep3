@@ -1,5 +1,5 @@
 <?php
-require('../../models/Ticket_model.php');
+require('../../models/Ticket_Model.php');
 
 if (session_status() == PHP_SESSION_NONE) {
     session_start();

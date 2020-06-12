@@ -1,7 +1,9 @@
 <?php
-require '../logic/Message.php';
-require '../models/Ticket_model.php';
-session_start();
+require_once '../logic/Message.php';
+require_once '../models/Ticket_Model.php';
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 ?>
 <html>
 <head>
@@ -22,7 +24,6 @@ session_start();
                 <div class="userMenu">
                     <button class="userMenuBtn"><img src="../public/images/usermenu.png"></button>
                     <div class="userMenuContent">
-<!--                        <a href="dance.php">Profile</a>-->
                         <a href="../includes/logoutInc.php">Logout</a>
                     </div>
                 </div>
